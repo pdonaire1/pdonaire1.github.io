@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
-<title>Demo::Free Professional HTML5 CV/Resume Template: The Resume</title>
+<title>Pablo González Donaire</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="robots" content="index,follow">
@@ -111,13 +111,27 @@ Thank you for contacting me!
 
 <!--header start-->
 <header class="header">
-			
+			<img src="images/profile.jpg" width="" height="" style="
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-left: 218px;
+    margin-top: 5px;
+    border: 1px solid #91A2BD;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+">
 			
             
                  
            
             
-			<div class="headerwrapper">
+			<div class="headerwrapper" style="
+    position: absolute;
+    margin-left: 381px;
+    margin-top: 25px;
+">
            
           
             
