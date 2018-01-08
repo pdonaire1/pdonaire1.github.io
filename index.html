@@ -33,13 +33,26 @@
         color: black;
         font-weight: bold;
       }
-      
+      .button-download {
+        cursor: pointer;
+        border: none;
+        background-color: #28ad70;
+        padding: 12px;
+        text-decoration: none;
+        border-radius: 9px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 72%;
+      }
+
+
       .show-iframe {
         width: 90%;
         height: 1000px;
         text-align: center;
         border: none;
         border-radius: 10px;
+        background-color: #ffffff;
       }
       .hide {
         display: none;
@@ -60,9 +73,15 @@
       <br />
       <br />
       <div id="es" class="hide">
+        <a class="button-download" download
+          href="https://docs.google.com/document/export?format=pdf&id=1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54&token=AC4w5ViAEeM7mrO6fnnwsqHeqtrOURGv-Q%3A1515446670053&includes_info_params=true">
+          Descargar</a><br /><br />
         <iframe class="show-iframe" src="https://docs.google.com/document/d/1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54/edit?usp=sharing"></iframe>
       </div>
       <div id="en" class="hide">
+        <a class="button-download" download
+          href="https://docs.google.com/document/export?format=pdf&id=1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok&token=AC4w5Vhun0OOPIPLDWz9So8h_RsoM2LKng%3A1515446261011&includes_info_params=true">
+          Download</a><br /><br />
         <iframe class="show-iframe" src="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit?usp=sharing"></iframe>
       </div>
     </center>
@@ -103,7 +122,7 @@
   }
 
   function activate(id){
-    window.location = generateUrl(window.location.pathname,{lang: id});  
+    window.location = generateUrl(window.location.pathname,{lang: id});
   }
 </script>
 </html>
