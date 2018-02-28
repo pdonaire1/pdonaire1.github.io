@@ -1,0 +1,9 @@
+–release command generate apk to create a signed apk which will be upload to google play store.
+
+ionic serve #para que haga los cambios
+ionic cordova run android
+
+para debug:
+cordova build android
+para montarlo en play store:
+cordova build --release --prod android
