@@ -57,7 +57,7 @@
         border-radius: 9px;
         color: #ffffff;
         font-weight: bold;
-        font-size: 72%;
+        /* font-size: 72%; */
       }
 
       .show-iframe {
@@ -130,61 +130,19 @@
       <button class="button-en" onclick="activate('en')">English</button>
       <br />
       <br />
-      <a class="button-download" download
-        href="https://docs.google.com/document/export?format=pdf&id=1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54&token=AC4w5ViAEeM7mrO6fnnwsqHeqtrOURGv-Q%3A1515446670053&includes_info_params=true">
-        Descargar</a><br /><br />
-      <iframe class="show-iframe" src="https://docs.google.com/document/d/1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54/edit?usp=sharing"></iframe>
-      <div id="es" class="hide">
+      <div id="es" >
+        <a class="button-download" download
+          href="https://docs.google.com/document/export?format=pdf&id=1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54&token=AC4w5ViAEeM7mrO6fnnwsqHeqtrOURGv-Q%3A1515446670053&includes_info_params=true">
+          Descargar</a><br /><br />
+        <iframe class="show-iframe" src="https://docs.google.com/document/d/1vcCLC3xuOxhZUvLo1Tm-njRY6OXRfhgs19hwsDLsn54/edit?usp=sharing"></iframe>
       </div>
-      <div id="en" class="hide">
+      <div id="en">
         <a class="button-download" download
           href="https://docs.google.com/document/export?format=pdf&id=1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok&token=AC4w5Vhun0OOPIPLDWz9So8h_RsoM2LKng%3A1515446261011&includes_info_params=true">
           Download</a><br /><br />
         <iframe class="show-iframe" src="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit?usp=sharing"></iframe>
       </div>
-      <script type="text/javascript">
-        $(document).ready(function (){
-          $('.carousel').carousel();
-        });
       
-        function findGetParameter(parameterName) {
-          var result = null,
-              tmp = [];
-          var items = location.search.substr(1).split("&");
-          for (var index = 0; index < items.length; index++) {
-              tmp = items[index].split("=");
-              if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-          }
-          return result;
-        }
-        function generateUrl(url, params) {
-            var i = 0, key;
-            for (key in params) {
-                if (i === 0) {
-                    url += "?";
-                } else {
-                    url += "&";
-                }
-                url += key;
-                url += '=';
-                url += params[key];
-                i++;
-            }
-            return url;
-        }
-      
-        var lang = findGetParameter("lang");
-        if (lang){
-          document.getElementById(lang).style.display = "initial";
-        }
-        else{
-          document.getElementById("es").style.display = "initial";
-        }
-      
-        function activate(id){
-          window.location = generateUrl(window.location.pathname,{lang: id});
-        }
-      </script>
 
 
 
@@ -196,7 +154,7 @@
           <li class="active"><a data-toggle="tab" href="#coinnotification">CoinNotification</a></li>
           <li><a data-toggle="tab" href="#leyapp">LeyApp</a></li>
           <li><a data-toggle="tab" href="#sos">Guaruras SOS</a></li>
-          <li><a data-toggle="tab" href="#menu3">Ofertapp</a></li>
+          <li><a data-toggle="tab" href="#ofertapp">Ofertapp</a></li>
         </ul>
       </div>
       <div class="card-body">
@@ -344,11 +302,11 @@
             </div>
           </div>
           
-          <div id="menu3" class="tab-pane fade">
+          <div id="ofertapp" class="tab-pane fade">
             <h3>Ofertapp</h3>
             <p>Aplicacion para Web, Android y IOS desarrollada con Ruby on Rails como FullStack y Ionic/Angular para móvil.</br>
               App para la creación de cupones de ofertas para las empresas registradas en la plataformas.</p>
-              <div id="carouselsos" class="carousel slide" data-ride="carousel">
+              <div id="carouselofertapp" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselofertapp" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselofertapp" data-slide-to="1"></li>
@@ -397,5 +355,51 @@
 
     </center>
   </body>
-
+  <script type="text/javascript">
+        
+      
+    function findGetParameter(parameterName) {
+      var result = null,
+          tmp = [];
+      var items = location.search.substr(1).split("&");
+      for (var index = 0; index < items.length; index++) {
+          tmp = items[index].split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+      }
+      return result;
+    }
+    function generateUrl(url, params) {
+        var i = 0, key;
+        for (key in params) {
+            if (i === 0) {
+                url += "?";
+            } else {
+                url += "&";
+            }
+            url += key;
+            url += '=';
+            url += params[key];
+            i++;
+        }
+        return url;
+    }
+  
+    var lang = findGetParameter("lang");
+    if (lang){
+      document.getElementById("es").style.display = "none";
+      document.getElementById("en").style.display = "none";
+      document.getElementById(lang).style.display = "initial";
+    }
+    else{
+      document.getElementById("es").style.display = "initial";
+      document.getElementById("en").style.display = "none";
+    }
+  
+    function activate(id){
+      window.location = generateUrl(window.location.pathname,{lang: id});
+    }
+    $(document).ready(function (){
+      $('.carousel').carousel();
+    });
+  </script>
 </html>
