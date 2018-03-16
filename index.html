@@ -10,12 +10,12 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script
+    <!-- <script
     src="https://raw.githubusercontent.com/pdonaire1/pdonaire1.github.io/master/assets/bootstrap-4.0.0/js/dist/util.js"
     crossorigin="anonymous"></script>
     <script
     src="https://raw.githubusercontent.com/pdonaire1/pdonaire1.github.io/master/assets/bootstrap-4.0.0/js/dist/carousel.js"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://raw.githubusercontent.com/pdonaire1/pdonaire1.github.io/master/assets/bootstrap-4.0.0/docs/4.0/examples/carousel/carousel.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -143,25 +143,45 @@
         <iframe class="show-iframe" src="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit?usp=sharing"></iframe>
       </div>
   
-  <!-- <div style="padding: 20px;">
+  <div style="padding: 20px;">
     <div class="card" style="background: #fff;border-radius: 5px;">
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li class="active"><a data-toggle="tab" href="#coinnotification">CoinNotification</a></li>
           <li><a data-toggle="tab" href="#leyapp">LeyApp</a></li>
-          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-          <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+          <li><a data-toggle="tab" href="#sos">Guaruras SOS</a></li>
+          <li><a data-toggle="tab" href="#menu3">Ofertapp</a></li>
         </ul>
       </div>
       <div class="card-body">
       
         <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
+          <div id="coinnotification" class="tab-pane fade in active">
             <h3>CoinNotification</h3>
             <p>Desarrollada en Ionci/Angular (actualemente disponible en PlayStore para la versión 
               <a href="https://play.google.com/store/apps/details?id=io.ionic.coin_notification_free" target="_blank">Free</a> y la 
               <a href="https://play.google.com/store/apps/details?id=io.ionic.CoinNotificationPremium" target="_blank">Premium</a>.</br>
               Aplicación para recibir notificaciones cuando la criptomoneda exceda el límite configurado según el rango de precios establecidos. Presenta una calculadora de precios y más.</p>
+
+              <div id="carousecoinnotification" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousecoinnotification" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousecoinnotification" data-slide-to="1"></li>
+                    <li data-target="#carousecoinnotification" data-slide-to="2"></li>
+                    <li data-target="#carousecoinnotification" data-slide-to="3"></li>
+                    <li data-target="#carousecoinnotification" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item item active"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/coinNotification/01.png" alt="coinnotification-01"></div>
+                    <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/coinNotification/02.png" alt="coinnotification-02"></div>
+                    <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/coinNotification/03.png" alt="coinnotification-03"></div>
+                    <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/coinNotification/04.png" alt="coinnotification-04"></div>
+                    <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/coinNotification/05.png" alt="coinnotification-05"></div>
+                  </div>
+                  <a class="left carousel-control" href="#carousecoinnotification" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                  <a class="right carousel-control" href="#carousecoinnotification" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+
           </div>
           <div id="leyapp" class="tab-pane fade">
             <h3>LeyApp</h3>
@@ -250,50 +270,83 @@
                 <a class="right carousel-control" href="#carouselLeyapp" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
               </div>
           </div>
-          <div id="menu2" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          <div id="sos" class="tab-pane fade">
+            <h3>Guaruras SOS</h3>
+            <p>Aplicacion para Android y IOS desarrollada con Django como FullStack y Ionic/Angular para móvil</br>
+              App para seguimiento vía GPS para seguridad personal, y enviar notificationes a los usuarios asociados cuando ocurra una emergencia.</br>
+              <a href="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/apks/guaruras.apk" download>Descargar APK</a>.
+            </p>
+            <div id="carouselsos" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselsos" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselsos" data-slide-to="1"></li>
+                <li data-target="#carouselsos" data-slide-to="2"></li>
+                <li data-target="#carouselsos" data-slide-to="3"></li>
+                <li data-target="#carouselsos" data-slide-to="4"></li>
+                <li data-target="#carouselsos" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item item active"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/01.png" alt="sos-01"></div>
+                <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/02.png" alt="sos-02"></div>
+                <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/03.png" alt="sos-03"></div>
+                <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/04.png" alt="sos-04"></div>
+                <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/05.png" alt="sos-05"></div>
+                <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/sos/06.png" alt="sos-05"></div>
+              </div>
+              <a class="left carousel-control" href="#carouselsos" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="right carousel-control" href="#carouselsos" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+            </div>
           </div>
+          
           <div id="menu3" class="tab-pane fade">
-            <h3>Menu 3</h3>
-            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <h3>Ofertapp</h3>
+            <p>Aplicacion para Web, Android y IOS desarrollada con Ruby on Rails como FullStack y Ionic/Angular para móvil.</br>
+              App para la creación de cupones de ofertas para las empresas registradas en la plataformas.</p>
+              <div id="carouselsos" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselsos" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselsos" data-slide-to="1"></li>
+                  <li data-target="#carouselsos" data-slide-to="2"></li>
+                  <li data-target="#carouselsos" data-slide-to="3"></li>
+                  <li data-target="#carouselsos" data-slide-to="4"></li>
+                  <li data-target="#carouselsos" data-slide-to="5"></li>
+                  <li data-target="#carouselsos" data-slide-to="6"></li>
+                  <li data-target="#carouselsos" data-slide-to="7"></li>
+                  <li data-target="#carouselsos" data-slide-to="8"></li>
+                  <li data-target="#carouselsos" data-slide-to="9"></li>
+                  <li data-target="#carouselsos" data-slide-to="10"></li>
+                  <li data-target="#carouselsos" data-slide-to="11"></li>
+                  <li data-target="#carouselsos" data-slide-to="12"></li>
+                  <li data-target="#carouselsos" data-slide-to="13"></li>
+                  <li data-target="#carouselsos" data-slide-to="14"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item item active"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/01.jpeg" alt="ofertapp-01"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/02.jpeg" alt="ofertapp-02"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/03.jpeg" alt="ofertapp-03"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/04.jpeg" alt="ofertapp-04"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/05.jpeg" alt="ofertapp-05"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/06.jpeg" alt="ofertapp-06"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/07.jpeg" alt="ofertapp-07"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/08.jpeg" alt="ofertapp-08"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/09.jpeg" alt="ofertapp-09"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/10.jpeg" alt="ofertapp-10"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/11.jpeg" alt="ofertapp-11"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/12.jpeg" alt="ofertapp-12"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/13.jpeg" alt="ofertapp-13"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/14.jpeg" alt="ofertapp-14"></div>
+                  <div class="carousel-item item"><img class="d-block w-100" style="width: 250px" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/ofertapp/15.jpeg" alt="ofertapp-15"></div>
+                </div>
+                <a class="left carousel-control" href="#carouselsos" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                <a class="right carousel-control" href="#carouselsos" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   
-
-
-
-<!-- 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item item active">
-            <img class="d-block w-100" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/apps/leyapp/Disen%C3%8C%C2%83o%20final%20Abogados-01.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item item">
-            <img class="d-block w-100" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/img/gmail.png" alt="Second slide">
-          </div>
-          <div class="carousel-item item">
-            <img class="d-block w-100" src="https://github.com/pdonaire1/pdonaire1.github.io/raw/master/assets/img/gmail.png" alt="Third slide">
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div> -->
-
 
     </center>
   </body>
