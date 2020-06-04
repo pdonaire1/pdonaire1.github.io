@@ -2,7 +2,7 @@
   "name": "pdonaire1",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://pdonaire1.github.io/",
+  "homepage" : "http://pdonaire1.github.io/pdonaire1.github.io",
   "dependencies": {
     "jquery": "^3.2.1",
     "react": "^16.2.0",
