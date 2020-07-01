@@ -152,6 +152,48 @@
       }
     ]
   },
+  "challenges": [
+    {
+      "name": "CodeWars (8Kyu)",
+      "type": "percentage",
+      "level": "90%",
+      "link": "https://www.codewars.com/users/pdonaire1"
+    },
+    {
+      "name": "StackOverflow",
+      "type": "percentage",
+      "level": "73%",
+      "link": "https://stackoverflow.com/users/4717331/pablo-alejandro"
+    },
+    {
+      "title":"Posts CRUD React",
+      "type": "project",
+      "category":"CRUD Post/TODO example using Next/React/MaterialUI.",
+      "image":"crudNextReactMaterial.jpg",
+      "url":"https://crud-next-posts.herokuapp.com/"
+    },
+    {
+      "title":"Reddit Gallery",
+      "type": "project",
+      "category":"Reddit Gallery Challenge with React and Ruby on Rails.",
+      "image":"redditPosts.jpg",
+      "url":"https://reddit-pdonaire1-reactjs.herokuapp.com/"
+    },
+    {
+      "title":"Weather Station",
+      "type": "project",
+      "category":"Weather station api temporary created with React/TypeScript/Mobx/NodeJs.",
+      "image":"weatherStations.jpg",
+      "url":"https://weather-react-pdonaire1.herokuapp.com/"
+    },
+    {
+      "title":"Game of Thrones",
+      "type": "project",
+      "category":"Game of Thrones Challenge to show characters and description by simple API created with React/TypeScrip/MobX/NodeJs.",
+      "image":"got.jpg",
+      "url":"https://github.com/pdonaire1/prueba-seleccion-fullstack"
+    }
+  ],
   "portfolio":{
     "projects": [
       {
@@ -183,6 +225,12 @@
         "category":"App for cryptocurrencies traking",
         "image":"coinnotification.jpg",
         "url":"https://play.google.com/store/apps/details?id=io.ionic.coin_notification_free"
+      },
+      {
+        "title":"Superales",
+        "category":"Application to buy market by delivery, using Ionic/Angular",
+        "image":"superales.jpg",
+        "url":"https://play.google.com/store/apps/details?id=com.dakonon.superales.mx"
       }
     ]
   },

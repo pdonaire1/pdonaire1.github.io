@@ -411,7 +411,28 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }  */
+/* ------------------------------------------------------------------ */
+/* e. Challenge Section
+/* ------------------------------------------------------------------ */
 
+.challenge-column {
+   width: 200px;
+   padding-bottom: 50px;
+}
+#challenges {
+   background: #ffffff;
+   padding-top: 90px;
+   padding-bottom: 60px;
+}
+#challenges h1 {
+   font: 15px/24px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color: #95A3A3;
+}
+#challenges-wrapper .columns { margin-bottom: 36px; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
@@ -431,6 +452,10 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Portfolio Content */
+.contact-msg {
+   color: #fff;
+   padding: 10px;
+}
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
