@@ -68,6 +68,7 @@
     "work":[
       {
         "company":"Azumo",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/Recommendation%20Letter%20Azumo.pdf",
         "title":"Software Developer ",
         "years":"May 2018 - February 2020",
         "description":"Development of applications for FurstPerson, Stovell, MyNLU, Horoscope, amount other with +3B$ clients like Apple, Discovery Channel, Facebook Messenger Chatbot among others. Working with Microservices strategy, Web, API and Alexa using tools like NodeJs, ReactJs, Python, Ruby on Rails, AWS Lambda functions, AWS ASK, AWS S3, AWS S3, MongoDB."
@@ -86,6 +87,7 @@
       },
       {
         "company":"4Geeks ",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/Carta_Recomendacion_Pablo_Donaire_4Geeks.pdf",
         "title":"FullStack Developer",
         "years":"December 2015 - March 2016",
         "description":"Development in Web Applications, Rest Services and E-commerce platforms such as 4GPayments, Mall4G, Prixealo, DialACook. Tools implemented: Django-Framework, Django-Rest-Framework, Python, Stripe, MySQL, SQLite, JQuery, JavaScript, Bootstrap, Material and GIT."
