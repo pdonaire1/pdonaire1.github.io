@@ -44,7 +44,7 @@
       },
       {
         "name":"codewars",
-        "url":"https://www.codewars.com/users/pdonaire1",
+        "url":"https://www.codewars.com/users/pdonaire1/completed",
         "className":"fa fa-code"
       }
     ]
@@ -100,6 +100,7 @@
       },
       {
         "company":"CENDITEL ",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/CartadeRecomendacionCENDITEL.pdf",
         "title":"FullStack Developer",
         "years":"November 2014 - October 2015",
         "description":"Safo Government Project for public administration and accountant, using the following softwares: Django/Python, JQuery, JavaScript, Bootstrap, PostgreSQL and GIT."
@@ -159,7 +160,7 @@
       "name": "CodeWars (8Kyu)",
       "type": "percentage",
       "level": "90%",
-      "link": "https://www.codewars.com/users/pdonaire1"
+      "link": "https://www.codewars.com/users/pdonaire1/completed"
     },
     {
       "name": "StackOverflow",
