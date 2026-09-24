@@ -1,10 +1,36 @@
 # Pablo Alejandro González Donaire (System Engineer)
 ![ReactJS Resume Website Template](https://raw.githubusercontent.com/pdonaire1/pdonaire1/master/public/images/portfolio/demo.png "ReactJS Resume Website pdonaire1")
-### <a href="http://pdonaire1.github.io/">RESUME and Portfolio.</a> 
+### <a href="https://pdonaire1.github.io/pdonaire1/">RESUME (main page, print to PDF)</a>
+### <a href="https://pdonaire1.github.io/pdonaire1/portfolio.html">Interactive portfolio</a>
+
+The résumé (`public/index.html`) is a standalone, dependency-free page that renders `public/resumeData.json`. The React portfolio lives at `public/portfolio.html` (`scripts/postbuild.js` points it at the hashed bundle after a build). Edit the JSON to update both pages; use the **Download PDF** button to export a clean single-column PDF for job applications.
 
 
 ## Description
 I'm Pablo González System Engineer - FullStack Software Developer. I've participated in software innovations, Web Development, Android, IOS, API Rest Services, with knowledge to solve any problem. This Repo contains my personal Resume with some projects and examples.
+
+## Development
+
+The React toolchain is `react-scripts` 1.x, which needs **Node 16** for the dev server (`nvm use` reads `.nvmrc`).
+
+```bash
+nvm install 16 && nvm use     # once
+npm install
+npm start                     # http://localhost:3000 (résumé), /portfolio.html (React portfolio)
+```
+
+Only need the résumé page? It has no build step:
+
+```bash
+cd public && python3 -m http.server 8000   # http://localhost:8000/resume.html
+```
+
+Production build and deploy to GitHub Pages (works on Node 16; on Node 17+ prefix with `NODE_OPTIONS=--openssl-legacy-provider`):
+
+```bash
+npm run build                 # postbuild wires build/portfolio.html to the hashed bundle
+npm run deploy                # pushes ./build to the gh-pages branch
+```
 
 ## Credits
 ##### Base Template

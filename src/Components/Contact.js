@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-console.log(process.env)
 var API_KEY = process.env.REACT_APP_EMAILJS_USER_ID || '';
 
 const emailjs = window.emailjs;
-emailjs.init(API_KEY);
+if (emailjs) emailjs.init(API_KEY);
 class Contact extends Component {
   constructor(props){
     super(props);
@@ -19,6 +18,10 @@ class Contact extends Component {
       this.setState({loading: false, topMessage: "Please Fill the Contact Form"});
       return;
     }
+    if (!emailjs) {
+      this.setState({loading: false, topMessage: "Email service unavailable, please write to pdonaire1@gmail.com"});
+      return;
+    }
     emailjs.send(
       'gmail', 'resume_pdonaire1_github_io_contact',
       {body: contactMessage, contact: contactEmail}
@@ -27,16 +30,6 @@ class Contact extends Component {
         this.setState({ loading: false, topMessage: "Email sent, you also can contact to me by pdonaire1@gmail.com"})
       })
       .catch(err => this.setState({ loading: false, topMessage: "Error sending email, please write to pdonaire1@gmail.com"}))
-
-    const callback = (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        ;
-      } else {
-       
-      }
-    }
-    //request(options, callback);
-    
   }
   handleChange(event) {
     const { name, value } = event.target;

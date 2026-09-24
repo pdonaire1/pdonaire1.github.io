@@ -29,6 +29,7 @@ class Header extends Component {
             <li><a className="smoothscroll" href="#challenges">Challenges</a></li>
             {/*<li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>*/}
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
+            <li><a href="./" title="ATS-friendly résumé">Full CV</a></li>
          </ul>
 
       </nav>
