@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pablo González – Full Stack Software Engineer</title>
+  <meta name="description" content="Résumé of Pablo Alejandro González Donaire, Senior Full Stack Software Engineer with more than a decade of experience in Ruby on Rails, React, TypeScript, Node.js, Python/Django and AWS.">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Pablo Alejandro González Donaire">
+  <link rel="canonical" href="https://pdonaire1.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pablo González – Full Stack Software Engineer">
+  <meta property="og:description" content="Senior Full Stack Software Engineer · Ruby on Rails, React, TypeScript, Node.js, Python/Django, AWS.">
+  <meta property="og:image" content="https://pdonaire1.github.io/images/profilepic.jpg">
+  <meta property="og:url" content="https://pdonaire1.github.io/">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1214" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <script>
+    /* Apply the saved theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var t = localStorage.getItem('resume-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f6f5f1;
+      --surface: #ffffff;
+      --text: #1b1f23;
+      --muted: #5b6470;
+      --line: #e3e1db;
+      --accent: #0b6e6a;
+      --accent-soft: #e3f1ef;
+      --accent-ink: #ffffff;
+      --chip: #eef0ee;
+      --chip-text: #2f3a3a;
+      --shadow: 0 1px 2px rgba(20, 24, 28, .06), 0 8px 24px -12px rgba(20, 24, 28, .18);
+      --radius: 12px;
+      --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f1214; --surface: #171b1f; --text: #e9e7e1; --muted: #9aa3ad; --line: #2a3036;
+        --accent: #4fd1c5; --accent-soft: #14302e; --accent-ink: #062321; --chip: #1f262b; --chip-text: #d5dbe0;
+        --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.8);
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f1214; --surface: #171b1f; --text: #e9e7e1; --muted: #9aa3ad; --line: #2a3036;
+      --accent: #4fd1c5; --accent-soft: #14302e; --accent-ink: #062321; --chip: #1f262b; --chip-text: #d5dbe0;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.8);
+      color-scheme: dark;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+    img { max-width: 100%; display: block; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+    .bullets { list-style: disc; }
+    h1, h2, h3 { margin: 0; line-height: 1.2; }
+    p { margin: 0; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+    .skip { position: absolute; left: 16px; top: -100px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 8px; z-index: 100; }
+    .skip:focus { top: 12px; }
+
+    /* Top bar */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar .wrap { display: flex; align-items: center; gap: 12px; min-height: 56px; max-width: 1100px; }
+    .brand { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--text); white-space: nowrap; }
+    .nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1; -webkit-overflow-scrolling: touch; }
+    .nav::-webkit-scrollbar { display: none; }
+    .nav a { color: var(--muted); font-size: 14px; font-weight: 500; padding: 8px 9px; border-radius: 8px; white-space: nowrap; }
+    .nav a:hover { color: var(--text); background: var(--chip); text-decoration: none; }
+    .actions { display: flex; gap: 8px; margin-left: auto; }
+    .btn {
+      appearance: none; border: 1px solid var(--line); background: var(--surface); color: var(--text);
+      font: inherit; font-size: 14px; font-weight: 600; padding: 8px 12px; border-radius: 10px; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 8px; line-height: 1;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .btn-primary:hover { filter: brightness(1.06); text-decoration: none; }
+    .btn svg { width: 16px; height: 16px; }
+    .btn-icon { padding: 8px; }
+    .btn .label { display: none; }
+    @media (min-width: 640px) { .btn .label { display: inline; } }
+
+    /* Language toggle */
+    .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+    .lang button { appearance: none; border: 0; background: transparent; padding: 0 8px; height: 34px; display: inline-flex; align-items: center; cursor: pointer; opacity: .55; transition: opacity .15s; }
+    .lang button + button { border-left: 1px solid var(--line); }
+    .lang button[aria-pressed="true"] { background: var(--accent-soft); opacity: 1; }
+    .lang button:hover { opacity: 1; }
+    .lang svg { width: 20px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.12); flex: none; }
+
+    /* Hero */
+    .hero { padding: 40px 0 28px; display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; }
+    .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid var(--surface); box-shadow: var(--shadow); }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -0.01em; }
+    .title { font-size: clamp(17px, 2.4vw, 20px); font-weight: 600; color: var(--accent); margin-top: 6px; }
+    .headline { color: var(--muted); font-size: 15px; margin-top: 4px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 16px; font-size: 14.5px; }
+    .contact li { display: inline-flex; align-items: center; gap: 7px; color: var(--text); }
+    .contact svg { width: 16px; height: 16px; color: var(--muted); flex: none; }
+    .contact a { color: var(--text); }
+    .contact a:hover { color: var(--accent); }
+    @media (max-width: 560px) { .hero { grid-template-columns: 1fr; gap: 16px; } .avatar { width: 80px; height: 80px; } }
+
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 8px 0 8px; }
+    .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+    .stat b { display: block; font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--accent); line-height: 1.1; }
+    .stat span { font-size: 13px; color: var(--muted); }
+    @media (max-width: 420px) { .stats { grid-template-columns: 1fr 1fr; } .stats .stat:last-child { grid-column: span 2; } }
+
+    /* Sections */
+    section { padding: 36px 0 0; }
+    section:last-of-type { padding-bottom: 36px; }
+    h2 {
+      font-family: var(--font-display); font-size: 24px; font-weight: 700; letter-spacing: -0.005em;
+      display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
+    }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    .lead { font-size: 17px; line-height: 1.7; max-width: 72ch; }
+
+    /* Skills */
+    .skills { display: grid; gap: 14px; }
+    .skill-group { display: grid; grid-template-columns: 180px 1fr; gap: 6px 16px; align-items: start; }
+    .skill-group dt { font-weight: 600; font-size: 14px; color: var(--muted); padding-top: 5px; }
+    .skill-group dd { margin: 0; }
+    @media (max-width: 560px) { .skill-group { grid-template-columns: 1fr; gap: 4px; } }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags li { background: var(--chip); color: var(--chip-text); font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; line-height: 1.4; }
+    .tags.small li { font-size: 12px; padding: 3px 8px; }
+
+    /* Experience */
+    .jobs { display: grid; gap: 6px; position: relative; }
+    .job { position: relative; padding: 14px 0 22px 28px; }
+    .job::before { content: ""; position: absolute; left: 5px; top: 22px; bottom: -6px; width: 2px; background: var(--line); }
+    .job:last-child::before { bottom: 22px; }
+    .job::after { content: ""; position: absolute; left: 0; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); }
+    .job-head { display: flex; justify-content: space-between; gap: 8px 20px; align-items: baseline; flex-wrap: wrap; }
+    .job h3 { font-size: 18px; font-weight: 700; }
+    .job-org { color: var(--muted); font-size: 15px; margin-top: 2px; }
+    .job-org a { color: var(--text); font-weight: 600; }
+    .job-when { text-align: right; font-size: 14px; color: var(--muted); white-space: nowrap; }
+    .job-when time { display: block; font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; }
+    @media (max-width: 560px) { .job-when { text-align: left; } .job-when time { display: inline; } .job-when .dur::before { content: " · "; } }
+    .bullets { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 6px; }
+    .bullets li { line-height: 1.55; }
+    .bullets li::marker { color: var(--accent); }
+    .job .tags { margin-top: 12px; }
+    .job-links { margin-top: 10px; font-size: 14px; }
+    .job-links a { display: inline-flex; align-items: center; gap: 6px; }
+    .job-links svg { width: 14px; height: 14px; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+    .project { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform .15s ease, box-shadow .15s ease; }
+    .project:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .project-media { aspect-ratio: 16 / 10; background: var(--chip); overflow: hidden; }
+    .project-media img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .project-body { padding: 14px 16px 16px; display: grid; gap: 8px; flex: 1; }
+    .project h3 { font-size: 16px; font-weight: 700; }
+    .project h3 a { color: var(--text); }
+    .project p { font-size: 14px; color: var(--muted); line-height: 1.5; }
+    .project .tags { margin-top: auto; }
+    .project-url { font-size: 12.5px; color: var(--muted); word-break: break-all; }
+
+    /* Education / two column blocks */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px; }
+    @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+    .card h3 { font-size: 17px; font-weight: 700; }
+    .card .sub { color: var(--muted); font-size: 14.5px; margin-top: 4px; }
+    .card .date { font-size: 14px; font-weight: 600; margin-top: 8px; }
+    .card p.desc { font-size: 14.5px; margin-top: 8px; line-height: 1.55; }
+    .list { display: grid; gap: 8px; }
+    .list li { display: flex; gap: 10px; align-items: baseline; font-size: 15px; }
+    .list li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; transform: translateY(-2px); }
+    .h3-sub { font-size: 15px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+
+    /* Contact */
+    .contact-card { background: var(--accent-soft); border-radius: var(--radius); padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between; }
+    .contact-card p { max-width: 50ch; }
+    .contact-card .cta { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 13.5px; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+    .status { padding: 60px 0; color: var(--muted); text-align: center; }
+    .status.error { color: #b42318; }
+    .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: .2s; pointer-events: none; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    /* ---------- Print: a clean single-column, ATS-parsable document ---------- */
+    @media print {
+      @page { size: A4; margin: 14mm 15mm 16mm; }
+      :root, :root[data-theme="dark"] {
+        --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #bbb; --accent: #000;
+        --accent-soft: transparent; --chip: transparent; --chip-text: #000; --shadow: none; color-scheme: light;
+      }
+      html { scroll-padding-top: 0; }
+      body { font-size: 10.5pt; line-height: 1.4; background: #fff; }
+      .wrap { max-width: none; padding: 0; }
+      .topbar, .skip, .stats, .avatar, .project-media, .toast, .no-print, .contact-card .cta, .status { display: none !important; }
+      a { color: #000; text-decoration: none; }
+      .hero { padding: 0 0 10pt; grid-template-columns: 1fr; gap: 0; border-bottom: 1.5pt solid #000; }
+      .hero h1 { font-size: 22pt; }
+      .title { font-size: 12.5pt; color: #000; margin-top: 2pt; }
+      .headline { font-size: 10pt; color: #333; }
+      .contact { margin-top: 6pt; gap: 2pt 14pt; font-size: 9.5pt; }
+      .contact svg { display: none; }
+      section { padding: 11pt 0 0; break-inside: auto; }
+      h2 { font-size: 13pt; margin-bottom: 7pt; break-after: avoid; }
+      h2::after { background: #999; }
+      .lead { font-size: 10.5pt; max-width: none; }
+      .skills { gap: 3pt; }
+      .skill-group { grid-template-columns: 120pt 1fr; gap: 0 8pt; }
+      .skill-group dt { padding-top: 0; font-size: 10pt; color: #000; }
+      .tags { display: inline; }
+      .tags li, .tags.small li { display: inline; padding: 0; background: none; font-size: 10pt; font-weight: 400; color: #000; }
+      .tags li::after { content: ", "; }
+      .tags li:last-child::after { content: ""; }
+      .jobs { position: static; display: block; }
+      .job { position: static; padding: 0 0 8pt 0; break-inside: avoid; }
+      .job::before, .job::after { display: none; }
+      .job h3 { font-size: 11.5pt; }
+      .job-org { font-size: 10pt; color: #222; }
+      .job-when { font-size: 10pt; }
+      .bullets { margin-top: 3pt; gap: 1pt; padding-left: 14pt; }
+      .job .tags { margin-top: 3pt; font-size: 9.5pt; }
+      .job .tags::before { content: "Technologies: "; font-weight: 600; }
+      html[lang="es"] .job .tags::before { content: "Tecnologías: "; }
+      .job-links, .print-hide { display: none !important; }
+      .projects { display: block; }
+      .project { border: 0; border-radius: 0; break-inside: avoid; margin-bottom: 5pt; }
+      .project:hover { transform: none; box-shadow: none; }
+      .project-body { padding: 0; gap: 1pt; }
+      .project h3 { font-size: 10.5pt; display: inline; }
+      .project h3::after { content: " — "; font-weight: 400; }
+      .project p { display: inline; color: #000; font-size: 10pt; }
+      .project .tags { display: none; }
+      .project-url { display: inline; font-size: 9pt; color: #444; }
+      .project-url::before { content: " · "; }
+      .two-col { grid-template-columns: 1fr; gap: 6pt; }
+      .card { border: 0; padding: 0; break-inside: avoid; }
+      .card h3 { font-size: 11pt; }
+      .card .sub, .card .date, .card p.desc { font-size: 10pt; margin-top: 1pt; }
+      .list { gap: 1pt; }
+      .list li { font-size: 10pt; }
+      .list li::before { background: #000; }
+      .list a::after { content: ": " attr(href); color: #444; word-break: break-all; }
+      .h3-sub { font-size: 10pt; margin-bottom: 4pt; margin-top: 6pt; }
+      .contact-card { padding: 0; }
+      footer { border: 0; padding: 8pt 0 0; font-size: 8.5pt; color: #555; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Back to top">PG</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#summary" data-i18n="nav_summary">Summary</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <div class="lang" role="group" aria-label="Language" id="lang-toggle">
+          <button type="button" data-lang="en" aria-pressed="true" title="English" aria-label="English" lang="en">
+            <svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0L60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0L60 30M60 0L0 30" stroke="#C8102E" stroke-width="2.4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>
+          </button>
+          <button type="button" data-lang="es" aria-pressed="false" title="Español" aria-label="Español" lang="es">
+            <svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#AA151B"/><rect y="7.5" width="60" height="15" fill="#F1BF00"/></svg>
+          </button>
+        </div>
+        <button class="btn btn-icon" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" data-i18n-aria="theme" data-i18n-title="theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-primary" id="pdf-btn" href="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/export?format=pdf" rel="noopener" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          <span class="label" data-i18n="download">Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="wrap" tabindex="-1">
+    <div id="app">
+      <p class="status" id="status">Loading résumé…</p>
+      <noscript>
+        <p class="status error">This page needs JavaScript to render the résumé data. You can read the
+          <a href="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit">Google Docs version</a>
+          or write to <a href="mailto:pdonaire@sweetcharts.com">pdonaire@sweetcharts.com</a> or <a href="mailto:pdonaire1@gmail.com">pdonaire1@gmail.com</a>.</p>
+      </noscript>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap" id="footer"></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="application/ld+json" id="jsonld"></script>
+
+  <script>
+    (function () {
+      'use strict';
+      var I18N = {
+        en: {
+          months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          nav_summary: 'Summary', nav_skills: 'Skills', nav_experience: 'Experience', nav_projects: 'Projects', nav_education: 'Education', nav_contact: 'Contact',
+          download: 'Download PDF', theme: 'Toggle dark mode', skip: 'Skip to content', loading: 'Loading résumé…',
+          stat_years: 'years of experience', stat_companies: 'companies & clients', stat_projects: 'shipped projects',
+          h_summary: 'Professional Summary', h_skills: 'Skills', h_experience: 'Work Experience', h_projects: 'Selected Projects',
+          h_challenges: 'Coding challenges & quick examples', h_education: 'Education & Awards', h_more: 'Languages & Profiles',
+          h_languages: 'Languages', h_profiles: 'Coding profiles', h_letters: 'Recommendation letters', h_contact: 'Contact',
+          present: 'Present', graduated: 'Graduated ', letter: 'Recommendation letter (PDF)', copy: 'Copy email', copied: 'Copied ',
+          gdoc: 'Google Docs version', portfolio: 'Interactive portfolio', source: 'Source on GitHub', updated: 'Last updated ',
+          contact_msg: 'Get in touch.', photo: 'Portrait photo of ', shot: ' screenshot', tech: 'Technologies',
+          yr: ' yr', yrs: ' yrs', mo: ' mo', mos: ' mos', err: 'Could not load resumeData.json ({0}). Serve this folder over HTTP.'
+        },
+        es: {
+          months: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+          nav_summary: 'Resumen', nav_skills: 'Habilidades', nav_experience: 'Experiencia', nav_projects: 'Proyectos', nav_education: 'Educación', nav_contact: 'Contacto',
+          download: 'Descargar PDF', theme: 'Cambiar modo oscuro', skip: 'Ir al contenido', loading: 'Cargando currículum…',
+          stat_years: 'años de experiencia', stat_companies: 'empresas y clientes', stat_projects: 'proyectos entregados',
+          h_summary: 'Resumen profesional', h_skills: 'Habilidades', h_experience: 'Experiencia laboral', h_projects: 'Proyectos destacados',
+          h_challenges: 'Retos de programación y ejemplos', h_education: 'Educación y reconocimientos', h_more: 'Idiomas y perfiles',
+          h_languages: 'Idiomas', h_profiles: 'Perfiles de programación', h_letters: 'Cartas de recomendación', h_contact: 'Contacto',
+          present: 'Actualidad', graduated: 'Graduado en ', letter: 'Carta de recomendación (PDF)', copy: 'Copiar correo', copied: 'Copiado ',
+          gdoc: 'Versión en Google Docs', portfolio: 'Portafolio interactivo', source: 'Código en GitHub', updated: 'Última actualización ',
+          contact_msg: 'Escríbeme.', photo: 'Foto de ', shot: ' captura de pantalla', tech: 'Tecnologías',
+          yr: ' año', yrs: ' años', mo: ' mes', mos: ' meses', err: 'No se pudo cargar resumeData.json ({0}). Sirve esta carpeta por HTTP.'
+        }
+      };
+      var ICONS = {
+        mail: '<path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/>',
+        phone: '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/>',
+        pin: '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+        globe: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+        link: '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
+        doc: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/>'
+      };
+
+      /* ---------- language ---------- */
+      var lang = 'en';
+      (function () {
+        var q = null;
+        try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+        var saved = null;
+        try { saved = localStorage.getItem('resume-lang'); } catch (e) {}
+        var pick = q || saved;
+        if (pick && I18N[pick]) lang = pick;
+      })();
+      function t(k) { var d = I18N[lang]; return d[k] !== undefined ? d[k] : I18N.en[k]; }
+      /* Localized field: obj[field + '_es'] when Spanish and present, else obj[field]. */
+      function L(o, f) {
+        if (!o) return '';
+        if (lang !== 'en') { var v = o[f + '_' + lang]; if (v !== undefined && v !== null && v !== '') return v; }
+        return o[f];
+      }
+      function applyStatic() {
+        document.documentElement.lang = lang;
+        Array.prototype.forEach.call(document.querySelectorAll('[data-i18n]'), function (el) { el.textContent = t(el.getAttribute('data-i18n')); });
+        Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-aria]'), function (el) { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
+        Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-title]'), function (el) { el.setAttribute('title', t(el.getAttribute('data-i18n-title'))); });
+        Array.prototype.forEach.call(document.querySelectorAll('#lang-toggle button'), function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+      }
+      var cached = null;
+      document.getElementById('lang-toggle').addEventListener('click', function (e) {
+        var b = e.target.closest('button[data-lang]');
+        if (!b || b.getAttribute('data-lang') === lang) return;
+        lang = b.getAttribute('data-lang');
+        try { localStorage.setItem('resume-lang', lang); } catch (err) {}
+        applyStatic();
+        if (cached) render(cached);
+      });
+
+      /* ---------- tiny DOM helper ---------- */
+      function h(tag, attrs, children) {
+        var el = document.createElement(tag);
+        if (attrs) {
+          Object.keys(attrs).forEach(function (k) {
+            var v = attrs[k];
+            if (v === null || v === undefined || v === false) return;
+            if (k === 'class') el.className = v;
+            else if (k === 'html') el.innerHTML = v;
+            else if (k === 'text') el.textContent = v;
+            else el.setAttribute(k, v);
+          });
+        }
+        (Array.isArray(children) ? children : [children]).forEach(function (c) {
+          if (c === null || c === undefined || c === false) return;
+          el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+        });
+        return el;
+      }
+      function ic(name) {
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        var attrs = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' };
+        Object.keys(attrs).forEach(function (k) { svg.setAttribute(k, attrs[k]); });
+        svg.innerHTML = ICONS[name] || '';
+        return svg;
+      }
+      function ext(url, text, attrs) {
+        return h('a', Object.assign({ href: url, target: '_blank', rel: 'noopener noreferrer' }, attrs || {}), text);
+      }
+      function tags(list, small) {
+        if (!list || !list.length) return null;
+        return h('ul', { class: 'tags' + (small ? ' small' : ''), 'aria-label': t('tech') }, list.map(function (x) { return h('li', null, x); }));
+      }
+
+      /* ---------- dates ---------- */
+      function parseYM(s) { if (!s) return null; var p = s.split('-'); return new Date(Number(p[0]), Number(p[1]) - 1, 1); }
+      function fmtYM(s) { var d = parseYM(s); return d ? t('months')[d.getMonth()] + ' ' + d.getFullYear() : ''; }
+      function monthsBetween(a, b) { return (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()) + 1; }
+      function fmtDuration(months) {
+        var y = Math.floor(months / 12), m = months % 12, parts = [];
+        if (y) parts.push(y + (y === 1 ? t('yr') : t('yrs')));
+        if (m) parts.push(m + (m === 1 ? t('mo') : t('mos')));
+        return parts.join(' ') || '1' + t('mo');
+      }
+      function range(job) {
+        if (job.start) return fmtYM(job.start) + ' – ' + (job.end ? fmtYM(job.end) : t('present'));
+        return (job.years || '').replace(/\s-\s/, ' – ');
+      }
+      function totalYears(work) {
+        var now = new Date(), earliest = null;
+        work.forEach(function (w) { var d = parseYM(w.start); if (d && (!earliest || d < earliest)) earliest = d; });
+        return earliest ? Math.floor(monthsBetween(earliest, now) / 12) : null;
+      }
+
+      /* ---------- theme ---------- */
+      var root = document.documentElement;
+      document.getElementById('theme-toggle').addEventListener('click', function () {
+        var dark = root.getAttribute('data-theme') === 'dark' ||
+          (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var next = dark ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('resume-theme', next); } catch (e) {}
+      });
+
+      var toastTimer;
+      function toast(msg) {
+        var el = document.getElementById('toast'); el.textContent = msg; el.classList.add('show');
+        clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+      }
+      function copy(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { toast(t('copied') + text); }, function () { toast(text); });
+        } else toast(text);
+      }
+
+      /* ---------- render ---------- */
+      function render(data) {
+        cached = data;
+        if (data.main && data.main.resumepdf) document.getElementById('pdf-btn').setAttribute('href', data.main.resumepdf);
+        var main = data.main || {}, res = data.resume || {}, work = res.work || [];
+        var years = totalYears(work);
+        var yearsText = years ? years + '+' : '';
+        var name = main.fullName || main.name;
+        var portfolio = (data.portfolio && data.portfolio.projects) || [];
+        var challenges = (data.challenges || []).filter(function (c) { return c.type === 'project'; });
+        var profiles = (data.challenges || []).filter(function (c) { return c.type === 'percentage'; });
+        var education = (res.education || []).filter(function (e) { return e.type !== 'award'; });
+        var awards = (res.education || []).filter(function (e) { return e.type === 'award'; });
+        var letters = work.filter(function (w) { return w.recommendation; });
+        var companies = work.filter(function (w) { return w.start; }).length;
+        var social = (main.social || []);
+        var primarySocial = social.filter(function (s) { return ['linkedin', 'github', 'stackoverflow', 'codewars'].indexOf(s.name) >= 0; });
+
+        document.title = name + ' – ' + (L(main, 'title') || main.occupation);
+
+        var app = document.getElementById('app');
+        app.textContent = '';
+
+        /* Hero */
+        var emails = (main.emails && main.emails.length ? main.emails : [main.email]).filter(Boolean);
+        var contact = h('ul', { class: 'contact' }, emails.map(function (em) {
+          return h('li', null, [ic('mail'), h('a', { href: 'mailto:' + em }, em)]);
+        }).concat([
+          main.phone && h('li', null, [ic('phone'), h('a', { href: 'tel:' + main.phone.replace(/[^+\d]/g, '') }, main.phone)]),
+          main.location && h('li', null, [ic('pin'), L(main, 'location')]),
+          main.website && h('li', null, [ic('globe'), ext('https://' + main.website + '/', main.website)])
+        ]).concat(primarySocial.map(function (s) {
+          return h('li', null, [ic('link'), ext(s.url, s.handle || s.label || s.url, { 'aria-label': s.label })]);
+        })));
+
+        app.appendChild(h('section', { class: 'hero', id: 'top' }, [
+          main.image && h('img', { class: 'avatar', src: 'images/' + main.image, alt: t('photo') + name, width: '96', height: '96' }),
+          h('div', null, [
+            h('h1', null, name),
+            h('p', { class: 'title' }, L(main, 'title') || main.occupation),
+            main.headline && h('p', { class: 'headline' }, L(main, 'headline')),
+            contact
+          ])
+        ]));
+
+        if (years) {
+          app.appendChild(h('div', { class: 'stats', role: 'list' }, [
+            h('div', { class: 'stat', role: 'listitem' }, [h('b', null, yearsText), h('span', null, t('stat_years'))]),
+            h('div', { class: 'stat', role: 'listitem' }, [h('b', null, String(companies)), h('span', null, t('stat_companies'))]),
+            h('div', { class: 'stat', role: 'listitem' }, [h('b', null, (portfolio.length + challenges.length) + '+'), h('span', null, t('stat_projects'))])
+          ]));
+        }
+
+        /* Summary */
+        var summary = (L(main, 'summary') || main.bio || '').replace(/\{\{years\}\}/g, years || '');
+        app.appendChild(h('section', { id: 'summary', 'aria-labelledby': 'h-summary' }, [
+          h('h2', { id: 'h-summary' }, t('h_summary')),
+          h('p', { class: 'lead' }, summary)
+        ]));
+
+        /* Skills */
+        var groups = res.skillGroups || [];
+        app.appendChild(h('section', { id: 'skills', 'aria-labelledby': 'h-skills' }, [
+          h('h2', { id: 'h-skills' }, t('h_skills')),
+          h('dl', { class: 'skills' }, groups.map(function (g) {
+            return h('div', { class: 'skill-group' }, [h('dt', null, L(g, 'name')), h('dd', null, tags(L(g, 'skills')))]);
+          }))
+        ]));
+
+        /* Experience */
+        app.appendChild(h('section', { id: 'experience', 'aria-labelledby': 'h-exp' }, [
+          h('h2', { id: 'h-exp' }, t('h_experience')),
+          h('ol', { class: 'jobs' }, work.map(function (w) {
+            var dur = w.start ? fmtDuration(monthsBetween(parseYM(w.start), w.end ? parseYM(w.end) : new Date())) : '';
+            var company = L(w, 'company').trim();
+            var orgBits = [w.url ? ext(w.url, company) : h('span', { style: 'font-weight:600;color:var(--text)' }, company)];
+            if (w.location) orgBits.push(' · ' + L(w, 'location'));
+            if (w.employmentType) orgBits.push(' · ' + L(w, 'employmentType'));
+            var hl = L(w, 'highlights');
+            var bullets = hl && hl.length ? hl : (w.description ? [L(w, 'description')] : []);
+            return h('li', { class: 'job' }, [
+              h('div', { class: 'job-head' }, [
+                h('div', null, [h('h3', null, L(w, 'title').trim()), h('p', { class: 'job-org' }, orgBits)]),
+                range(w) && h('p', { class: 'job-when' }, [h('time', null, range(w)), dur && h('span', { class: 'dur' }, dur)])
+              ]),
+              h('ul', { class: 'bullets' }, bullets.map(function (b) { return h('li', null, b); })),
+              tags(L(w, 'stack'), true),
+              w.recommendation && h('p', { class: 'job-links' }, ext(w.recommendation, [ic('doc'), t('letter')]))
+            ]);
+          }))
+        ]));
+
+        /* Projects */
+        function projectCard(p) {
+          var url = p.url && p.url.trim();
+          var title = url ? ext(url, p.title) : h('span', null, p.title);
+          var img = p.image && h('div', { class: 'project-media' }, h('img', { src: 'images/portfolio/' + p.image, alt: p.title + t('shot'), loading: 'lazy' }));
+          return h('article', { class: 'project' }, [
+            url ? ext(url, img, { 'aria-hidden': 'true', tabindex: '-1' }) : img,
+            h('div', { class: 'project-body' }, [
+              h('h3', null, title),
+              h('p', null, L(p, 'category')),
+              tags(L(p, 'stack'), true),
+              url && h('span', { class: 'project-url' }, url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))
+            ])
+          ]);
+        }
+        app.appendChild(h('section', { id: 'projects', 'aria-labelledby': 'h-proj' }, [
+          h('h2', { id: 'h-proj' }, t('h_projects')),
+          h('div', { class: 'projects' }, portfolio.map(projectCard)),
+          challenges.length ? h('p', { class: 'h3-sub print-hide', style: 'margin-top:28px' }, t('h_challenges')) : null,
+          challenges.length ? h('div', { class: 'projects print-hide' }, challenges.map(projectCard)) : null
+        ]));
+
+        /* Education, awards, languages, profiles */
+        var eduCards = education.map(function (e) {
+          return h('article', { class: 'card' }, [
+            h('h3', null, L(e, 'degreeFull') || L(e, 'degree')),
+            h('p', { class: 'sub' }, [e.institution || e.school, e.location ? ' · ' + L(e, 'location') : '']),
+            h('p', { class: 'date' }, t('graduated') + L(e, 'graduated')),
+            e.description && h('p', { class: 'desc' }, L(e, 'description'))
+          ]);
+        });
+        var awardCards = awards.map(function (a) {
+          return h('article', { class: 'card' }, [
+            h('h3', null, L(a, 'school')),
+            h('p', { class: 'sub' }, [L(a, 'degree'), a.issuer ? ' · ' + a.issuer : '']),
+            h('p', { class: 'date' }, L(a, 'graduated')),
+            a.description && h('p', { class: 'desc' }, L(a, 'description'))
+          ]);
+        });
+        app.appendChild(h('section', { id: 'education', 'aria-labelledby': 'h-edu' }, [
+          h('h2', { id: 'h-edu' }, t('h_education')),
+          h('div', { class: 'two-col' }, eduCards.concat(awardCards))
+        ]));
+
+        var extras = [];
+        if (main.languages && main.languages.length) {
+          extras.push(h('div', null, [
+            h('p', { class: 'h3-sub' }, t('h_languages')),
+            h('ul', { class: 'list' }, main.languages.map(function (l) { return h('li', null, [h('b', null, L(l, 'name')), ' — ' + L(l, 'level')]); }))
+          ]));
+        }
+        if (profiles.length || letters.length) {
+          extras.push(h('div', null, [
+            profiles.length ? h('p', { class: 'h3-sub' }, t('h_profiles')) : null,
+            profiles.length ? h('ul', { class: 'list' }, profiles.map(function (p) { return h('li', null, ext(p.link, p.name)); })) : null,
+            letters.length ? h('p', { class: 'h3-sub', style: profiles.length ? 'margin-top:18px' : '' }, t('h_letters')) : null,
+            letters.length ? h('ul', { class: 'list' }, letters.map(function (w) { return h('li', null, ext(w.recommendation, w.company.trim() + ' (PDF)')); })) : null
+          ]));
+        }
+        if (extras.length) {
+          app.appendChild(h('section', { id: 'more' }, [h('h2', null, t('h_more')), h('div', { class: 'two-col' }, extras)]));
+        }
+
+        /* Contact */
+        var docLink = main.resumedownload && ext(main.resumedownload, t('gdoc'), { class: 'btn' });
+        var copyBtn = h('button', { class: 'btn btn-primary', type: 'button' }, t('copy'));
+        copyBtn.addEventListener('click', function () { copy(main.email); });
+        app.appendChild(h('section', { id: 'contact', 'aria-labelledby': 'h-contact' }, [
+          h('h2', { id: 'h-contact' }, t('h_contact')),
+          h('div', { class: 'contact-card' }, [
+            h('div', null, [
+              h('p', { class: 'lead' }, [L(main, 'contactmessage') || t('contact_msg')]),
+              h('p', { style: 'margin-top:6px' }, emails.reduce(function (acc, em, i) {
+                if (i) acc.push(' · ');
+                acc.push(h('a', { href: 'mailto:' + em }, em));
+                return acc;
+              }, []).concat(main.phone ? [' · ', h('a', { href: 'tel:' + main.phone.replace(/[^+\d]/g, '') }, main.phone)] : []))
+            ]),
+            h('div', { class: 'cta' }, [copyBtn, docLink])
+          ])
+        ]));
+
+        /* Footer */
+        var foot = document.getElementById('footer');
+        foot.textContent = '';
+        foot.appendChild(h('span', null, ['© ' + new Date().getFullYear() + ' ' + name + (data.meta && data.meta.updated ? ' · ' + t('updated') + data.meta.updated : '')]));
+        foot.appendChild(h('span', { class: 'no-print' }, [
+          h('a', { href: 'portfolio.html' }, t('portfolio')), ' · ',
+          ext('https://github.com/pdonaire1/pdonaire1', t('source'))
+        ]));
+
+        /* Structured data for search engines (kept in English) */
+        var ld = {
+          '@context': 'https://schema.org', '@type': 'Person',
+          name: name, alternateName: main.name, jobTitle: main.title || main.occupation,
+          email: 'mailto:' + main.email, telephone: main.phone,
+          url: (data.meta && data.meta.canonical) || location.href,
+          image: 'images/' + main.image,
+          address: main.address ? { '@type': 'PostalAddress', addressLocality: main.address.city, addressRegion: main.address.state, addressCountry: main.address.country } : undefined,
+          sameAs: social.map(function (s) { return s.url; }),
+          alumniOf: education.map(function (e) { return { '@type': 'CollegeOrUniversity', name: e.institution || e.school }; }),
+          worksFor: work[0] && !work[0].end ? { '@type': 'Organization', name: work[0].company.trim(), url: work[0].url } : undefined,
+          knowsAbout: groups.reduce(function (acc, g) { return acc.concat(g.skills); }, []),
+          knowsLanguage: (main.languages || []).map(function (l) { return l.name; })
+        };
+        document.getElementById('jsonld').textContent = JSON.stringify(ld);
+      }
+
+      applyStatic();
+      document.getElementById('status').textContent = t('loading');
+      fetch('./resumeData.json', { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(render)
+        .catch(function (err) {
+          var st = document.getElementById('status');
+          st.className = 'status error';
+          st.textContent = t('err').replace('{0}', err.message);
+        });
+    })();
+  </script>
+</body>
+</html>
