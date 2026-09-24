@@ -101,7 +101,7 @@
     }
     .btn:hover { border-color: var(--accent); }
     .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-    .btn-primary:hover { filter: brightness(1.06); }
+    .btn-primary:hover { filter: brightness(1.06); text-decoration: none; }
     .btn svg { width: 16px; height: 16px; }
     .btn-icon { padding: 8px; }
     .btn .label { display: none; }
@@ -303,10 +303,10 @@
         <button class="btn btn-icon" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" data-i18n-aria="theme" data-i18n-title="theme">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         </button>
-        <button class="btn btn-primary" id="print-btn" type="button">
+        <a class="btn btn-primary" id="pdf-btn" href="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/export?format=pdf" rel="noopener" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
           <span class="label" data-i18n="download">Download PDF</span>
-        </button>
+        </a>
       </div>
     </div>
   </header>
@@ -317,7 +317,7 @@
       <noscript>
         <p class="status error">This page needs JavaScript to render the résumé data. You can read the
           <a href="https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit">Google Docs version</a>
-          or write to <a href="mailto:pdonaire1@gmail.com">pdonaire1@gmail.com</a>.</p>
+          or write to <a href="mailto:pdonaire@sweetcharts.com">pdonaire@sweetcharts.com</a> or <a href="mailto:pdonaire1@gmail.com">pdonaire1@gmail.com</a>.</p>
       </noscript>
     </div>
   </main>
@@ -466,7 +466,6 @@
         root.setAttribute('data-theme', next);
         try { localStorage.setItem('resume-theme', next); } catch (e) {}
       });
-      document.getElementById('print-btn').addEventListener('click', function () { window.print(); });
 
       var toastTimer;
       function toast(msg) {
@@ -482,6 +481,7 @@
       /* ---------- render ---------- */
       function render(data) {
         cached = data;
+        if (data.main && data.main.resumepdf) document.getElementById('pdf-btn').setAttribute('href', data.main.resumepdf);
         var main = data.main || {}, res = data.resume || {}, work = res.work || [];
         var years = totalYears(work);
         var yearsText = years ? years + '+' : '';
@@ -502,12 +502,14 @@
         app.textContent = '';
 
         /* Hero */
-        var contact = h('ul', { class: 'contact' }, [
-          main.email && h('li', null, [ic('mail'), h('a', { href: 'mailto:' + main.email }, main.email)]),
+        var emails = (main.emails && main.emails.length ? main.emails : [main.email]).filter(Boolean);
+        var contact = h('ul', { class: 'contact' }, emails.map(function (em) {
+          return h('li', null, [ic('mail'), h('a', { href: 'mailto:' + em }, em)]);
+        }).concat([
           main.phone && h('li', null, [ic('phone'), h('a', { href: 'tel:' + main.phone.replace(/[^+\d]/g, '') }, main.phone)]),
           main.location && h('li', null, [ic('pin'), L(main, 'location')]),
           main.website && h('li', null, [ic('globe'), ext('https://' + main.website + '/', main.website)])
-        ].concat(primarySocial.map(function (s) {
+        ]).concat(primarySocial.map(function (s) {
           return h('li', null, [ic('link'), ext(s.url, s.handle || s.label || s.url, { 'aria-label': s.label })]);
         })));
 
@@ -525,7 +527,7 @@
           app.appendChild(h('div', { class: 'stats', role: 'list' }, [
             h('div', { class: 'stat', role: 'listitem' }, [h('b', null, yearsText), h('span', null, t('stat_years'))]),
             h('div', { class: 'stat', role: 'listitem' }, [h('b', null, String(companies)), h('span', null, t('stat_companies'))]),
-            h('div', { class: 'stat', role: 'listitem' }, [h('b', null, String(portfolio.length + challenges.length)), h('span', null, t('stat_projects'))])
+            h('div', { class: 'stat', role: 'listitem' }, [h('b', null, (portfolio.length + challenges.length) + '+'), h('span', null, t('stat_projects'))])
           ]));
         }
 
@@ -640,10 +642,11 @@
           h('div', { class: 'contact-card' }, [
             h('div', null, [
               h('p', { class: 'lead' }, [L(main, 'contactmessage') || t('contact_msg')]),
-              h('p', { style: 'margin-top:6px' }, [
-                h('a', { href: 'mailto:' + main.email }, main.email),
-                main.phone ? ' · ' : '', main.phone ? h('a', { href: 'tel:' + main.phone.replace(/[^+\d]/g, '') }, main.phone) : ''
-              ])
+              h('p', { style: 'margin-top:6px' }, emails.reduce(function (acc, em, i) {
+                if (i) acc.push(' · ');
+                acc.push(h('a', { href: 'mailto:' + em }, em));
+                return acc;
+              }, []).concat(main.phone ? [' · ', h('a', { href: 'tel:' + main.phone.replace(/[^+\d]/g, '') }, main.phone)] : []))
             ]),
             h('div', { class: 'cta' }, [copyBtn, docLink])
           ])

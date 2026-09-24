@@ -14,7 +14,11 @@
     "summary": "Full Stack Software Engineer with {{years}}+ years of experience designing, building and maintaining web, API and mobile products for healthcare, fintech, e-commerce, recruitment and government clients. Currently developing a HIPAA-compliant healthcare (EHR) platform with Ruby on Rails, React, TypeScript and Next.js, and founder of SweetCharts.com, a trading-chart analysis platform built with Django, React, Redis and the Binance and BingX APIs. Strong background in REST and GraphQL APIs, microservices on AWS (Lambda, S3, EC2), relational and NoSQL databases (PostgreSQL, MySQL, MongoDB, DynamoDB, Redis) and payment integrations (Stripe, PayPal, Conekta). Daily user of AI-assisted development tools (Claude Code, Cursor, OpenCode) and builder of MCP servers, agent skills and LLM-powered features. Comfortable owning Full Stack features, from data model to UI, in remote, English-speaking teams.",
     "bio": "I am a Software Engineer with 12+ years of experience developing software with technologies such as: Ruby on Rails, ReactJS, TypeScript, NextJS, NodeJS, Django/Python, Ionic, AngularJS, JavaScript, PHP, jQuery, AWS Lambda, AWS EC2, AWS S3, AWS Alexa, ElasticSearch, DynamoDB, MongoDB, PostgreSQL, MySQL, SQLite, Redis, CSS3, GIT. Other skills: Stripe, Unit Testing, PayPal, Conekta, Swagger, Material, Bootstrap, HTML5, Sass, Less.",
     "contactmessage": "Contact me if you have any question.",
-    "email": "pdonaire1@gmail.com",
+    "email": "pdonaire@sweetcharts.com",
+    "emails": [
+      "pdonaire@sweetcharts.com",
+      "pdonaire1@gmail.com"
+    ],
     "phone": "+58-424-7252205",
     "address": {
       "street": "Res. Gravinas",
@@ -26,6 +30,7 @@
     "location": "Valencia, Carabobo, Venezuela",
     "website": "pdonaire1.github.io",
     "resumedownload": "https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit?usp=drive_web&ouid=110716028851057747988",
+    "resumepdf": "https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/export?format=pdf",
     "languages": [
       {
         "name": "Spanish",
