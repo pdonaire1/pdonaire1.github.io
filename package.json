@@ -14,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r git@github.com:pdonaire1/pdonaire1.github.io.git -b master -m \"Deploy resume from pdonaire1/pdonaire1\" && gh-pages -d build",
+    "deploy": "gh-pages -d build -b gh-pages",
+    "deploy:legacy": "gh-pages -d build -r git@github.com:pdonaire1/pdonaire1.git -b gh-pages",
     "build": "react-scripts build",
     "postbuild": "node scripts/postbuild.js",
     "test": "react-scripts test --env=jsdom",

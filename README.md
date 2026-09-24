@@ -11,6 +11,8 @@ I'm Pablo González System Engineer - FullStack Software Developer. I've partici
 
 ## Development
 
+The source lives on `master`; GitHub Pages serves the built site from the `gh-pages` branch.
+
 The React toolchain is `react-scripts` 1.x, which needs **Node 16** for the dev server (`nvm use` reads `.nvmrc`).
 
 ```bash
@@ -29,7 +31,8 @@ Production build and deploy to GitHub Pages (works on Node 16; on Node 17+ prefi
 
 ```bash
 npm run build                 # postbuild wires build/portfolio.html to the hashed bundle
-npm run deploy                # publishes ./build to pdonaire1.github.io (root) and to this repo's gh-pages (/pdonaire1/)
+npm run deploy                # publishes ./build to this repo's gh-pages branch, served at https://pdonaire1.github.io/
+npm run deploy:legacy         # optional: also refresh the old copy at /pdonaire1/ (pdonaire1/pdonaire1 gh-pages)
 ```
 
 ## Credits
