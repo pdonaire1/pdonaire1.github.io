@@ -2,7 +2,7 @@
   "name": "pdonaire1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pdonaire1.github.io/pdonaire1",
+  "homepage": "https://pdonaire1.github.io",
   "dependencies": {
     "dotenv": "^8.2.0",
     "jquery": "^3.2.1",
@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -r git@github.com:pdonaire1/pdonaire1.github.io.git -b master -m \"Deploy resume from pdonaire1/pdonaire1\" && gh-pages -d build",
     "build": "react-scripts build",
     "postbuild": "node scripts/postbuild.js",
     "test": "react-scripts test --env=jsdom",

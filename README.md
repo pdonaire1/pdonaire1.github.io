@@ -1,7 +1,7 @@
 # Pablo Alejandro González Donaire (System Engineer)
 ![ReactJS Resume Website Template](https://raw.githubusercontent.com/pdonaire1/pdonaire1/master/public/images/portfolio/demo.png "ReactJS Resume Website pdonaire1")
-### <a href="https://pdonaire1.github.io/pdonaire1/">RESUME (main page, print to PDF)</a>
-### <a href="https://pdonaire1.github.io/pdonaire1/portfolio.html">Interactive portfolio</a>
+### <a href="https://pdonaire1.github.io/">RESUME (main page, print to PDF)</a>
+### <a href="https://pdonaire1.github.io/portfolio.html">Interactive portfolio</a>
 
 The résumé (`public/index.html`) is a standalone, dependency-free page that renders `public/resumeData.json`. The React portfolio lives at `public/portfolio.html` (`scripts/postbuild.js` points it at the hashed bundle after a build). Edit the JSON to update both pages; use the **Download PDF** button to export a clean single-column PDF for job applications.
 
@@ -29,7 +29,7 @@ Production build and deploy to GitHub Pages (works on Node 16; on Node 17+ prefi
 
 ```bash
 npm run build                 # postbuild wires build/portfolio.html to the hashed bundle
-npm run deploy                # pushes ./build to the gh-pages branch
+npm run deploy                # publishes ./build to pdonaire1.github.io (root) and to this repo's gh-pages (/pdonaire1/)
 ```
 
 ## Credits
