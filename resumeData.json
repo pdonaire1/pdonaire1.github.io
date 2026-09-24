@@ -1,0 +1,905 @@
+{
+  "meta": {
+    "updated": "2026-09",
+    "canonical": "https://pdonaire1.github.io/"
+  },
+  "main": {
+    "name": "Pablo González",
+    "fullName": "Pablo Alejandro González Donaire",
+    "occupation": "System Engineer",
+    "title": "Senior Full Stack Software Engineer",
+    "headline": "Ruby on Rails · React · TypeScript · Node.js · Python/Django · AWS · AI tooling (Claude Code, MCP)",
+    "description": "✰ FullStack Developer ✰ with more than 12 years of experience creating innovation in BackEnd/FrontEnd/Mobile Software with multiple technologies to solve any problem",
+    "image": "profilepic.jpg",
+    "summary": "Full Stack Software Engineer with {{years}}+ years of experience designing, building and maintaining web, API and mobile products for healthcare, fintech, e-commerce, recruitment and government clients. Currently developing a HIPAA-compliant healthcare (EHR) platform with Ruby on Rails, React, TypeScript and Next.js, and founder of SweetCharts.com, a trading-chart analysis platform built with Django, React, Redis and the Binance and BingX APIs. Strong background in REST and GraphQL APIs, microservices on AWS (Lambda, S3, EC2), relational and NoSQL databases (PostgreSQL, MySQL, MongoDB, DynamoDB, Redis) and payment integrations (Stripe, PayPal, Conekta). Daily user of AI-assisted development tools (Claude Code, Cursor, OpenCode) and builder of MCP servers, agent skills and LLM-powered features. Comfortable owning Full Stack features, from data model to UI, in remote, English-speaking teams.",
+    "bio": "I am a Software Engineer with 12+ years of experience developing software with technologies such as: Ruby on Rails, ReactJS, TypeScript, NextJS, NodeJS, Django/Python, Ionic, AngularJS, JavaScript, PHP, jQuery, AWS Lambda, AWS EC2, AWS S3, AWS Alexa, ElasticSearch, DynamoDB, MongoDB, PostgreSQL, MySQL, SQLite, Redis, CSS3, GIT. Other skills: Stripe, Unit Testing, PayPal, Conekta, Swagger, Material, Bootstrap, HTML5, Sass, Less.",
+    "contactmessage": "Contact me if you have any question.",
+    "email": "pdonaire@sweetcharts.com",
+    "emails": [
+      "pdonaire@sweetcharts.com",
+      "pdonaire1@gmail.com"
+    ],
+    "phone": "+58-424-7252205",
+    "address": {
+      "street": "Res. Gravinas",
+      "city": "Valencia",
+      "state": "Carabobo",
+      "country": "Venezuela",
+      "zip": "2001"
+    },
+    "location": "Valencia, Carabobo, Venezuela",
+    "website": "pdonaire1.github.io",
+    "resumedownload": "https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/edit?usp=drive_web&ouid=110716028851057747988",
+    "resumepdf": "https://docs.google.com/document/d/1aaf2mRCG3LjAEdPWWZEIWAtIWsc3vc2Gnj5SJJiWNok/export?format=pdf",
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "Native",
+        "name_es": "Español",
+        "level_es": "Nativo"
+      },
+      {
+        "name": "English",
+        "level": "Professional working proficiency",
+        "name_es": "Inglés",
+        "level_es": "Competencia profesional"
+      }
+    ],
+    "social": [
+      {
+        "name": "linkedin",
+        "label": "LinkedIn",
+        "handle": "linkedin.com/in/pdonaire1",
+        "url": "https://www.linkedin.com/in/pdonaire1",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "label": "GitHub",
+        "handle": "github.com/pdonaire1",
+        "url": "https://github.com/pdonaire1",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "stackoverflow",
+        "label": "Stack Overflow",
+        "handle": "stackoverflow.com/users/4717331",
+        "url": "https://stackoverflow.com/users/4717331/pablo-alejandro",
+        "className": "fa fa-stack-overflow"
+      },
+      {
+        "name": "codewars",
+        "label": "Codewars",
+        "handle": "codewars.com/users/pdonaire1",
+        "url": "https://www.codewars.com/users/pdonaire1/completed",
+        "className": "fa fa-code"
+      },
+      {
+        "name": "twitter",
+        "label": "Twitter",
+        "handle": "twitter.com/pdonaire1",
+        "url": "https://twitter.com/pdonaire1",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "facebook",
+        "label": "Facebook",
+        "handle": "facebook.com/pdonaire1",
+        "url": "https://www.facebook.com/pdonaire1/",
+        "className": "fa fa-facebook"
+      }
+    ],
+    "title_es": "Ingeniero de Software Full Stack Senior",
+    "headline_es": "Ruby on Rails · React · TypeScript · Node.js · Python/Django · AWS · Herramientas de IA (Claude Code, MCP)",
+    "summary_es": "Ingeniero de Software Full Stack con más de {{years}} años de experiencia diseñando, construyendo y manteniendo productos web, API y móviles para clientes de salud, fintech, comercio electrónico, reclutamiento y gobierno. Actualmente desarrollo una plataforma de salud (EHR) que cumple con HIPAA usando Ruby on Rails, React, TypeScript y Next.js, y soy fundador de SweetCharts.com, una plataforma de análisis de gráficos de trading construida con Django, React, Redis y las APIs de Binance y BingX. Sólida experiencia en APIs REST y GraphQL, microservicios en AWS (Lambda, S3, EC2), bases de datos relacionales y NoSQL (PostgreSQL, MySQL, MongoDB, DynamoDB, Redis) e integraciones de pago (Stripe, PayPal, Conekta). Usuario diario de herramientas de desarrollo asistido por IA (Claude Code, Cursor, OpenCode) y creador de servidores MCP, agent skills y funcionalidades basadas en LLM. Cómodo asumiendo funcionalidades Full Stack completas, desde el modelo de datos hasta la UI, en equipos remotos de habla inglesa.",
+    "contactmessage_es": "Escríbeme si tienes alguna pregunta."
+  },
+  "resume": {
+    "skillmessage": "Some of the most important technologies.",
+    "skillGroups": [
+      {
+        "name": "Languages",
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "Ruby",
+          "Python",
+          "PHP",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "Less"
+        ],
+        "name_es": "Lenguajes",
+        "skills_es": [
+          "JavaScript",
+          "TypeScript",
+          "Ruby",
+          "Python",
+          "PHP",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "Less"
+        ]
+      },
+      {
+        "name": "AI & Agentic Tooling",
+        "skills": [
+          "AI-assisted development",
+          "Claude Code",
+          "Cursor",
+          "OpenCode",
+          "Agent Skills",
+          "MCP servers (Model Context Protocol)",
+          "MCP tool development",
+          "LLM API integration (Claude API)",
+          "AI agents & agentic workflows",
+          "Prompt engineering",
+          "AI chatbots"
+        ],
+        "name_es": "IA y herramientas agénticas",
+        "skills_es": [
+          "Desarrollo asistido por IA",
+          "Claude Code",
+          "Cursor",
+          "OpenCode",
+          "Agent Skills",
+          "Servidores MCP (Model Context Protocol)",
+          "Desarrollo de herramientas MCP",
+          "Integración de APIs LLM (Claude API)",
+          "Agentes de IA y flujos agénticos",
+          "Prompt engineering",
+          "Chatbots de IA"
+        ]
+      },
+      {
+        "name": "Frontend",
+        "skills": [
+          "React",
+          "Next.js",
+          "MobX",
+          "Angular",
+          "AngularJS",
+          "Ionic",
+          "Vue.js",
+          "jQuery",
+          "Material UI",
+          "Bootstrap",
+          "Responsive Design"
+        ],
+        "name_es": "Frontend",
+        "skills_es": [
+          "React",
+          "Next.js",
+          "MobX",
+          "Angular",
+          "AngularJS",
+          "Ionic",
+          "Vue.js",
+          "jQuery",
+          "Material UI",
+          "Bootstrap",
+          "Diseño responsive"
+        ]
+      },
+      {
+        "name": "Backend & APIs",
+        "skills": [
+          "Ruby on Rails",
+          "Node.js",
+          "Django",
+          "Django REST Framework",
+          "REST APIs",
+          "GraphQL",
+          "Microservices",
+          "Swagger / OpenAPI",
+          "Alexa Skills Kit"
+        ],
+        "name_es": "Backend y APIs",
+        "skills_es": [
+          "Ruby on Rails",
+          "Node.js",
+          "Django",
+          "Django REST Framework",
+          "REST APIs",
+          "GraphQL",
+          "Microservices",
+          "Swagger / OpenAPI",
+          "Alexa Skills Kit"
+        ]
+      },
+      {
+        "name": "Cloud & DevOps",
+        "skills": [
+          "AWS Lambda",
+          "AWS EC2",
+          "AWS S3",
+          "Heroku",
+          "Git",
+          "GitHub",
+          "CI/CD"
+        ],
+        "name_es": "Nube y DevOps",
+        "skills_es": [
+          "AWS Lambda",
+          "AWS EC2",
+          "AWS S3",
+          "Heroku",
+          "Git",
+          "GitHub",
+          "CI/CD"
+        ]
+      },
+      {
+        "name": "Databases",
+        "skills": [
+          "PostgreSQL",
+          "MySQL",
+          "SQLite",
+          "MongoDB",
+          "DynamoDB",
+          "Redis",
+          "Elasticsearch"
+        ],
+        "name_es": "Bases de datos",
+        "skills_es": [
+          "PostgreSQL",
+          "MySQL",
+          "SQLite",
+          "MongoDB",
+          "DynamoDB",
+          "Redis",
+          "Elasticsearch"
+        ]
+      },
+      {
+        "name": "Payments, Trading & Integrations",
+        "skills": [
+          "Stripe",
+          "PayPal",
+          "Conekta",
+          "Binance API",
+          "BingX API",
+          "Third-party APIs",
+          "Chatbots (Facebook Messenger)"
+        ],
+        "name_es": "Pagos, trading e integraciones",
+        "skills_es": [
+          "Stripe",
+          "PayPal",
+          "Conekta",
+          "Binance API",
+          "BingX API",
+          "APIs de terceros",
+          "Chatbots (Facebook Messenger)"
+        ]
+      },
+      {
+        "name": "Practices",
+        "skills": [
+          "Unit Testing",
+          "HIPAA Compliance",
+          "Technical Analysis / Trading Strategies",
+          "Code Review",
+          "Agile / Scrum",
+          "Remote Collaboration"
+        ],
+        "name_es": "Prácticas",
+        "skills_es": [
+          "Pruebas unitarias",
+          "Cumplimiento HIPAA",
+          "Análisis técnico / Estrategias de trading",
+          "Revisión de código",
+          "Agile / Scrum",
+          "Colaboración remota"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "UNEFA - Mérida",
+        "institution": "Universidad Nacional Experimental Politécnica de la Fuerza Armada (UNEFA)",
+        "location": "Mérida, Venezuela",
+        "degree": "System Engineer",
+        "degreeFull": "Bachelor's Degree in Systems Engineering (Ingeniero de Sistemas)",
+        "graduated": "June 2010",
+        "description": "System Engineer focused on software development, participating in important projects for universities in the state.",
+        "degreeFull_es": "Ingeniero de Sistemas (título universitario)",
+        "graduated_es": "junio de 2010",
+        "description_es": "Ingeniero de Sistemas enfocado en desarrollo de software, participando en proyectos importantes para universidades del estado."
+      },
+      {
+        "type": "award",
+        "school": "1st place in Expo Proyectos UNEFA 2011",
+        "issuer": "UNEFA",
+        "degree": "Tuition system for schools",
+        "graduated": "March 2011",
+        "description": "Won first place in the university's project exhibition with a school tuition-management system built for a state institution.",
+        "school_es": "1er lugar en Expo Proyectos UNEFA 2011",
+        "degree_es": "Sistema de matrícula para colegios",
+        "graduated_es": "marzo de 2011",
+        "description_es": "Primer lugar en la exposición de proyectos de la universidad con un sistema de gestión de matrícula escolar construido para una institución del estado."
+      }
+    ],
+    "work": [
+      {
+        "company": "Portrait",
+        "url": "https://www.portraitspa.com/",
+        "title": "Full Stack Software Engineer",
+        "years": "Apr 2020 - Present",
+        "start": "2020-04",
+        "end": null,
+        "location": "Remote",
+        "employmentType": "Full-time",
+        "description": "FullStack development for health software HIPAA compliance, using tools such as Ruby on Rails, React, Typescript, NextJS, SQL, Third-party API software, among others.",
+        "highlights": [
+          "Full Stack development and maintenance of a HIPAA-compliant healthcare (EHR) platform, from database and API design to UI.",
+          "Build backend services and REST APIs with Ruby on Rails and SQL, and front-end features with React, TypeScript and Next.js.",
+          "Integrate third-party APIs and services into the platform, following healthcare data-protection requirements."
+        ],
+        "stack": [
+          "Ruby on Rails",
+          "React",
+          "TypeScript",
+          "Next.js",
+          "SQL",
+          "REST APIs",
+          "HIPAA"
+        ],
+        "title_es": "Ingeniero de Software Full Stack",
+        "location_es": "Remoto",
+        "employmentType_es": "Tiempo completo",
+        "highlights_es": [
+          "Desarrollo y mantenimiento Full Stack de una plataforma de salud (EHR) que cumple con HIPAA, desde el diseño de base de datos y APIs hasta la UI.",
+          "Construyo servicios backend y APIs REST con Ruby on Rails y SQL, y funcionalidades front-end con React, TypeScript y Next.js.",
+          "Integro APIs y servicios de terceros en la plataforma, siguiendo los requisitos de protección de datos de salud."
+        ]
+      },
+      {
+        "company": "SweetCharts.com",
+        "url": "https://sweetcharts.com/",
+        "title": "Founder & Lead Full Stack Developer",
+        "years": "",
+        "start": null,
+        "end": null,
+        "location": "Remote",
+        "employmentType": "Own product",
+        "description": "Owner and developer of SweetCharts.com, a platform to analyze trading charts with different strategies, built with Django, React, Redis and the Binance and BingX APIs.",
+        "highlights": [
+          "Full Stack owner of the whole product: architecture, backend, front end, infrastructure and releases of a platform that analyzes trading charts against multiple strategies, so users avoid spending hours per symbol.",
+          "Built the backend with Django and Django REST Framework, using Redis for caching and background processing of market data.",
+          "Integrated the Binance and BingX exchange APIs to ingest market data across symbols and timeframes, and built the React (Next.js) front end to visualize charts and strategy results."
+        ],
+        "stack": [
+          "Django",
+          "Django REST Framework",
+          "Python",
+          "React",
+          "Next.js",
+          "Redis",
+          "Binance API",
+          "BingX API",
+          "Trading Strategies",
+          "Technical Analysis"
+        ],
+        "title_es": "Fundador y Desarrollador Full Stack Principal",
+        "location_es": "Remoto",
+        "employmentType_es": "Producto propio",
+        "highlights_es": [
+          "Responsable Full Stack de todo el producto: arquitectura, backend, front end, infraestructura y despliegues de una plataforma que analiza gráficos de trading con múltiples estrategias, para que los usuarios no pasen horas por cada símbolo.",
+          "Construí el backend con Django y Django REST Framework, usando Redis para caché y procesamiento en segundo plano de datos de mercado.",
+          "Integré las APIs de los exchanges Binance y BingX para ingerir datos de mercado de múltiples símbolos y temporalidades, y construí el front end en React (Next.js) para visualizar gráficos y resultados de estrategias."
+        ],
+        "stack_es": [
+          "Django",
+          "Django REST Framework",
+          "Python",
+          "React",
+          "Next.js",
+          "Redis",
+          "Binance API",
+          "BingX API",
+          "Estrategias de trading",
+          "Análisis técnico"
+        ]
+      },
+      {
+        "company": "Azumo",
+        "url": "https://azumo.com/",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/Recommendation%20Letter%20Azumo.pdf",
+        "title": "Software Developer",
+        "years": "May 2018 - Feb 2020",
+        "start": "2018-05",
+        "end": "2020-02",
+        "location": "Remote",
+        "employmentType": "Full-time",
+        "description": "Development of applications for FurstPerson, Stovell, MyNLU, Horoscope, among others, with +3B$ clients like Apple, Discovery Channel, Facebook Messenger Chatbot among others. Working with Microservices strategy, Web, API and Alexa using tools like NodeJs, ReactJs, Python, Ruby on Rails, AWS Lambda functions, AWS ASK, AWS S3, MongoDB.",
+        "highlights": [
+          "Delivered web, API and voice (Alexa) applications for clients such as FurstPerson, Stovell, MyNLU and Horoscope, whose end customers include Apple, Discovery Channel and Facebook.",
+          "Built microservices with Node.js, Python and Ruby on Rails deployed on AWS Lambda, using AWS S3 and MongoDB for storage.",
+          "Developed Alexa skills with the Alexa Skills Kit (AWS ASK), a Facebook Messenger chatbot and React front ends."
+        ],
+        "stack": [
+          "Node.js",
+          "React",
+          "Python",
+          "Ruby on Rails",
+          "AWS Lambda",
+          "Alexa Skills Kit",
+          "AWS S3",
+          "MongoDB",
+          "Microservices"
+        ],
+        "title_es": "Desarrollador de Software",
+        "location_es": "Remoto",
+        "employmentType_es": "Tiempo completo",
+        "highlights_es": [
+          "Entregué aplicaciones web, API y de voz (Alexa) para clientes como FurstPerson, Stovell, MyNLU y Horoscope, cuyos clientes finales incluyen Apple, Discovery Channel y Facebook.",
+          "Construí microservicios con Node.js, Python y Ruby on Rails desplegados en AWS Lambda, usando AWS S3 y MongoDB como almacenamiento.",
+          "Desarrollé skills de Alexa con el Alexa Skills Kit (AWS ASK), un chatbot de Facebook Messenger y front ends en React."
+        ]
+      },
+      {
+        "company": "PredictionLabs",
+        "title": "Backend Developer",
+        "years": "Sep 2017 - May 2018",
+        "start": "2017-09",
+        "end": "2018-05",
+        "location": "Remote",
+        "employmentType": "Contract",
+        "description": "API REST Service modules for an application with USD-Bitcoin ATM machines located in the USA. Worked with Django, Django REST Framework and Django GEOS.",
+        "highlights": [
+          "Designed and built REST API modules for a network of USD-Bitcoin ATM machines operating in the USA.",
+          "Implemented geolocation features with Django, Django REST Framework and Django GEOS (GeoDjango)."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "Django REST Framework",
+          "GeoDjango",
+          "REST APIs",
+          "PostgreSQL"
+        ],
+        "title_es": "Desarrollador Backend",
+        "location_es": "Remoto",
+        "employmentType_es": "Contrato",
+        "highlights_es": [
+          "Diseñé y construí módulos de API REST para una red de cajeros automáticos USD-Bitcoin que operan en EE. UU.",
+          "Implementé funcionalidades de geolocalización con Django, Django REST Framework y Django GEOS (GeoDjango)."
+        ]
+      },
+      {
+        "company": "KaferSystems",
+        "title": "Consultant Engineer",
+        "years": "Mar 2016 - Sep 2017",
+        "start": "2016-03",
+        "end": "2017-09",
+        "location": "Venezuela",
+        "employmentType": "Contract",
+        "description": "SinCola for Movistar: application development implementing tools like Ruby on Rails, REST services, microservices, Redis, jQuery, JavaScript, PostgreSQL, Bootstrap and GIT.",
+        "highlights": [
+          "Developed SinCola, a queue-management application for the telecom operator Movistar, using Ruby on Rails and REST microservices.",
+          "Worked with PostgreSQL and Redis on the back end and jQuery, JavaScript and Bootstrap on the front end."
+        ],
+        "stack": [
+          "Ruby on Rails",
+          "REST APIs",
+          "Microservices",
+          "Redis",
+          "PostgreSQL",
+          "jQuery",
+          "Bootstrap",
+          "Git"
+        ],
+        "title_es": "Ingeniero Consultor",
+        "location_es": "Venezuela",
+        "employmentType_es": "Contrato",
+        "highlights_es": [
+          "Desarrollé SinCola, una aplicación de gestión de colas para la operadora de telecomunicaciones Movistar, usando Ruby on Rails y microservicios REST.",
+          "Trabajé con PostgreSQL y Redis en el backend y jQuery, JavaScript y Bootstrap en el front end."
+        ]
+      },
+      {
+        "company": "4Geeks",
+        "url": "https://4geeks.io/",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/Carta_Recomendacion_Pablo_Donaire_4Geeks.pdf",
+        "title": "Full Stack Developer",
+        "years": "Dec 2015 - Mar 2016",
+        "start": "2015-12",
+        "end": "2016-03",
+        "location": "Remote",
+        "employmentType": "Contract",
+        "description": "Development of web applications, REST services and e-commerce platforms such as 4GPayments, Mall4G, Prixealo, DialACook. Tools implemented: Django Framework, Django REST Framework, Python, Stripe, MySQL, SQLite, jQuery, JavaScript, Bootstrap, Material and GIT.",
+        "highlights": [
+          "Built web applications, REST services and e-commerce platforms including 4GeeksPayments, Mall4G, Prixealo and DialACook.",
+          "Integrated Stripe payments and developed with Django, Django REST Framework, MySQL, SQLite, jQuery, Bootstrap and Material Design."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "Django REST Framework",
+          "Stripe",
+          "MySQL",
+          "SQLite",
+          "jQuery",
+          "Bootstrap"
+        ],
+        "title_es": "Desarrollador Full Stack",
+        "location_es": "Remoto",
+        "employmentType_es": "Contrato",
+        "highlights_es": [
+          "Construí aplicaciones web, servicios REST y plataformas de comercio electrónico como 4GeeksPayments, Mall4G, Prixealo y DialACook.",
+          "Integré pagos con Stripe y desarrollé con Django, Django REST Framework, MySQL, SQLite, jQuery, Bootstrap y Material Design."
+        ]
+      },
+      {
+        "company": "Agility Feat",
+        "title": "Software Developer",
+        "years": "Oct 2015 - Dec 2015",
+        "start": "2015-10",
+        "end": "2015-12",
+        "location": "Remote",
+        "employmentType": "Contract",
+        "description": "Module development for Legaroo, an application for lawyers created with NodeJS, ReactJS, JavaScript, PostgreSQL and GraphQL.",
+        "highlights": [
+          "Developed modules for Legaroo, a legal-services platform connecting lawyers and clients, using Node.js, React, GraphQL and PostgreSQL."
+        ],
+        "stack": [
+          "Node.js",
+          "React",
+          "GraphQL",
+          "PostgreSQL",
+          "JavaScript"
+        ],
+        "title_es": "Desarrollador de Software",
+        "location_es": "Remoto",
+        "employmentType_es": "Contrato",
+        "highlights_es": [
+          "Desarrollé módulos para Legaroo, una plataforma de servicios legales que conecta abogados y clientes, usando Node.js, React, GraphQL y PostgreSQL."
+        ]
+      },
+      {
+        "company": "CENDITEL",
+        "url": "https://www.cenditel.gob.ve/",
+        "recommendation": "https://github.com/pdonaire1/pdonaire1/blob/master/public/CartadeRecomendacionCENDITEL.pdf",
+        "title": "Full Stack Developer",
+        "years": "Nov 2014 - Oct 2015",
+        "start": "2014-11",
+        "end": "2015-10",
+        "location": "Mérida, Venezuela",
+        "employmentType": "Full-time",
+        "description": "SAFO Government Project for public administration and accounting, using Django/Python, jQuery, JavaScript, Bootstrap, PostgreSQL and GIT.",
+        "highlights": [
+          "Developed SAFO, a public-administration and accounting system for the Venezuelan government, with Django/Python, PostgreSQL, jQuery and Bootstrap."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "jQuery",
+          "Bootstrap",
+          "Git"
+        ],
+        "title_es": "Desarrollador Full Stack",
+        "location_es": "Mérida, Venezuela",
+        "employmentType_es": "Tiempo completo",
+        "highlights_es": [
+          "Desarrollé SAFO, un sistema de administración pública y contabilidad para el gobierno venezolano, con Django/Python, PostgreSQL, jQuery y Bootstrap."
+        ]
+      },
+      {
+        "company": "CENDITEL",
+        "title": "Full Stack Developer (Internship)",
+        "years": "Aug 2014 - Nov 2014",
+        "start": "2014-08",
+        "end": "2014-11",
+        "location": "Mérida, Venezuela",
+        "employmentType": "Internship",
+        "description": "Konekata: system of activities and work permits for the workers at the Ministry of Popular Power for Science and Technology (CENDITEL). Implemented with Django/Python, jQuery, JavaScript, SQLite and GIT.",
+        "highlights": [
+          "Built Konekata, an activities and work-permit management system for CENDITEL staff (Ministry of Science and Technology), with Django/Python, jQuery and SQLite."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "SQLite",
+          "jQuery",
+          "JavaScript",
+          "Git"
+        ],
+        "title_es": "Desarrollador Full Stack (Pasantía)",
+        "location_es": "Mérida, Venezuela",
+        "employmentType_es": "Pasantía",
+        "highlights_es": [
+          "Construí Konekata, un sistema de gestión de actividades y permisos laborales para el personal de CENDITEL (Ministerio de Ciencia y Tecnología), con Django/Python, jQuery y SQLite."
+        ]
+      },
+      {
+        "company": "FUNDACITE",
+        "title": "Full Stack Developer (Scholarship)",
+        "years": "Oct 2013 - Jul 2014",
+        "start": "2013-10",
+        "end": "2014-07",
+        "location": "Mérida, Venezuela",
+        "employmentType": "Scholarship",
+        "description": "Migration of the FUNDACITE website (Ministry of Popular Power for Science and Technology). Technologies: PHP, Joomla, JavaScript, MySQL.",
+        "highlights": [
+          "Migrated and rebuilt the FUNDACITE (Ministry of Science and Technology) website with PHP, Joomla, JavaScript and MySQL."
+        ],
+        "stack": [
+          "PHP",
+          "Joomla",
+          "JavaScript",
+          "MySQL"
+        ],
+        "title_es": "Desarrollador Full Stack (Beca)",
+        "location_es": "Mérida, Venezuela",
+        "employmentType_es": "Beca",
+        "highlights_es": [
+          "Migré y reconstruí el sitio web de FUNDACITE (Ministerio de Ciencia y Tecnología) con PHP, Joomla, JavaScript y MySQL."
+        ]
+      },
+      {
+        "company": "Freelance",
+        "title": "Full Stack & Mobile Developer",
+        "years": "",
+        "start": null,
+        "end": null,
+        "location": "Remote",
+        "employmentType": "Self-employed",
+        "description": "Flyers Concierge (Angular/Ionic), CoinNotification (Angular/Ionic) app to receive notifications according to the cryptocurrency configuration, Guaruras (Angular/Ionic) app for GPS tracking for personal security, ReadImage (Angular/Ionic) project to read the content from image documents, Cargapp (AngularJS/Ionic) project for trucks and freight in Colombia, CombateObesidad (AngularJS/Ionic) app to lose weight with coaches, LeyApp (AngularJS/Ionic) an application for lawyers and clients in Colombia, Legalitas web application for attorneys, and more applications, GISAGA (Joomla/PHP) survey application.",
+        "highlights": [
+          "Published hybrid mobile apps with Ionic and Angular: CoinNotification (cryptocurrency price alerts), Guaruras (GPS tracking for personal security), Flyers Concierge and ReadImage (document image reading).",
+          "Built Ionic/AngularJS apps for the Colombian market: Cargapp (trucking and freight), CombateObesidad (weight loss with coaches) and LeyApp (lawyers and clients).",
+          "Developed web applications such as Legalitas (attorney services) and GISAGA (survey platform on Joomla/PHP)."
+        ],
+        "stack": [
+          "Ionic",
+          "Angular",
+          "AngularJS",
+          "TypeScript",
+          "PHP",
+          "Joomla",
+          "Google Play"
+        ],
+        "title_es": "Desarrollador Full Stack y Móvil",
+        "location_es": "Remoto",
+        "employmentType_es": "Independiente",
+        "highlights_es": [
+          "Publiqué apps móviles híbridas con Ionic y Angular: CoinNotification (alertas de precios de criptomonedas), Guaruras (rastreo GPS para seguridad personal), Flyers Concierge y ReadImage (lectura de documentos en imágenes).",
+          "Construí apps Ionic/AngularJS para el mercado colombiano: Cargapp (transporte de carga), CombateObesidad (pérdida de peso con coaches) y LeyApp (abogados y clientes).",
+          "Desarrollé aplicaciones web como Legalitas (servicios de abogados) y GISAGA (plataforma de encuestas en Joomla/PHP)."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJS",
+        "level": "80%"
+      },
+      {
+        "name": "NodeJS",
+        "level": "80%"
+      },
+      {
+        "name": "Django/Python",
+        "level": "65%"
+      },
+      {
+        "name": "Ionic/AngularJS",
+        "level": "55%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "95%"
+      },
+      {
+        "name": "VueJs",
+        "level": "40%"
+      },
+      {
+        "name": "Ruby on Rails",
+        "level": "50%"
+      }
+    ]
+  },
+  "challenges": [
+    {
+      "name": "CodeWars",
+      "type": "percentage",
+      "level": "85%",
+      "link": "https://www.codewars.com/users/pdonaire1/completed"
+    },
+    {
+      "name": "StackOverflow",
+      "type": "percentage",
+      "level": "73%",
+      "link": "https://stackoverflow.com/users/4717331/pablo-alejandro"
+    },
+    {
+      "title": "Posts CRUD React",
+      "type": "project",
+      "category": "CRUD Post/TODO example using Next.js, React and Material UI.",
+      "stack": [
+        "Next.js",
+        "React",
+        "Material UI"
+      ],
+      "image": "crudNextReactMaterial.jpg",
+      "url": "https://crud-next-posts.herokuapp.com/",
+      "category_es": "Ejemplo CRUD de posts/TODO usando Next.js, React y Material UI."
+    },
+    {
+      "title": "Reddit Gallery",
+      "type": "project",
+      "category": "Reddit Gallery challenge with React and Ruby on Rails.",
+      "stack": [
+        "React",
+        "Ruby on Rails"
+      ],
+      "image": "redditPosts.jpg",
+      "url": "https://reddit-pdonaire1-reactjs.herokuapp.com/",
+      "category_es": "Reto de galería de Reddit con React y Ruby on Rails."
+    },
+    {
+      "title": "Weather Station",
+      "type": "project",
+      "category": "Weather station API and dashboard built with React, TypeScript, MobX and Node.js.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "MobX",
+        "Node.js"
+      ],
+      "image": "weatherStations.jpg",
+      "url": "https://weather-react-pdonaire1.herokuapp.com/",
+      "category_es": "API y panel de estación meteorológica construidos con React, TypeScript, MobX y Node.js."
+    },
+    {
+      "title": "Game of Thrones",
+      "type": "project",
+      "category": "Challenge to show characters and descriptions from a simple API, built with React, TypeScript, MobX and Node.js.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "MobX",
+        "Node.js"
+      ],
+      "image": "got.jpg",
+      "url": "https://github.com/pdonaire1/prueba-seleccion-fullstack",
+      "category_es": "Reto para mostrar personajes y descripciones desde una API simple, construido con React, TypeScript, MobX y Node.js."
+    }
+  ],
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Portrait",
+        "category": "HIPAA-compliant healthcare (EHR) platform built with Ruby on Rails, React, TypeScript and Next.js.",
+        "stack": [
+          "Ruby on Rails",
+          "React",
+          "TypeScript",
+          "Next.js"
+        ],
+        "image": "portraitapp.png",
+        "url": "https://www.portraitspa.com/",
+        "category_es": "Plataforma de salud (EHR) que cumple con HIPAA, construida con Ruby on Rails, React, TypeScript y Next.js."
+      },
+      {
+        "title": "SweetCharts.com",
+        "category": "Founder. Trading-chart analysis platform that evaluates symbols against multiple strategies, built with Django, React, Redis and the Binance and BingX APIs.",
+        "stack": [
+          "Django",
+          "React",
+          "Redis",
+          "Binance API",
+          "BingX API"
+        ],
+        "image": "sweetcharts.png",
+        "url": "https://sweetcharts.com/",
+        "category_es": "Fundador. Plataforma de análisis de gráficos de trading que evalúa símbolos con múltiples estrategias, construida con Django, React, Redis y las APIs de Binance y BingX."
+      },
+      {
+        "title": "4GeeksPayments",
+        "category": "Payment API for developers, with Stripe integration.",
+        "stack": [
+          "Django",
+          "Django REST Framework",
+          "Stripe"
+        ],
+        "image": "4gpayments.jpg",
+        "url": "https://payments.4geeks.io/",
+        "category_es": "API de pagos para desarrolladores, con integración de Stripe."
+      },
+      {
+        "title": "FurstPerson",
+        "category": "Recruitment software for talent-assessment solutions.",
+        "stack": [
+          "Node.js",
+          "React",
+          "AWS Lambda"
+        ],
+        "image": "furstperson.jpg",
+        "url": "https://www.furstperson.com/",
+        "category_es": "Software de reclutamiento para soluciones de evaluación de talento."
+      },
+      {
+        "title": "ACE - Azumo Chat Engine",
+        "category": "Azumo chat engine to generate AI chatbots (Facebook Messenger).",
+        "stack": [
+          "Node.js",
+          "AWS Lambda",
+          "MongoDB"
+        ],
+        "image": "ace.png",
+        "url": "https://www.youtube.com/watch?v=qopBdMGvgqY",
+        "category_es": "Motor de chat de Azumo para generar chatbots de IA (Facebook Messenger)."
+      },
+      {
+        "title": "SinCola (Movistar)",
+        "category": "Queue-management application for the telecom operator Movistar.",
+        "stack": [
+          "Ruby on Rails",
+          "Redis",
+          "PostgreSQL"
+        ],
+        "image": "sincola.jpg",
+        "url": "",
+        "category_es": "Aplicación de gestión de colas para la operadora de telecomunicaciones Movistar."
+      },
+      {
+        "title": "SAFO Government Project",
+        "category": "Government platform for public administration and accounting.",
+        "stack": [
+          "Django",
+          "PostgreSQL",
+          "Bootstrap"
+        ],
+        "image": "safo.jpg",
+        "url": "http://safo.cenditel.gob.ve/",
+        "category_es": "Plataforma gubernamental para administración pública y contabilidad."
+      },
+      {
+        "title": "Legaroo",
+        "category": "Application for legal consultation between lawyers and clients.",
+        "stack": [
+          "Node.js",
+          "React",
+          "GraphQL",
+          "PostgreSQL"
+        ],
+        "image": "legaroo.jpg",
+        "url": "https://app.legaroo.com/",
+        "category_es": "Aplicación de consulta legal entre abogados y clientes."
+      },
+      {
+        "title": "Coin Notification",
+        "category": "Android app for cryptocurrency price tracking and alerts.",
+        "stack": [
+          "Ionic",
+          "Angular"
+        ],
+        "image": "coinnotification.jpg",
+        "url": "https://play.google.com/store/apps/details?id=io.ionic.coin_notification_free",
+        "category_es": "App Android para seguimiento y alertas de precios de criptomonedas."
+      },
+      {
+        "title": "Superales",
+        "category": "Grocery-delivery shopping app built with Ionic and Angular.",
+        "stack": [
+          "Ionic",
+          "Angular"
+        ],
+        "image": "superales.jpg",
+        "url": "https://play.google.com/store/apps/details?id=com.dakonon.superales.mx",
+        "category_es": "App de compras de supermercado con entrega a domicilio, construida con Ionic y Angular."
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": []
+  }
+}
